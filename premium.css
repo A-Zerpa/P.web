@@ -1,0 +1,40 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.header-perfil{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-perfil img{
+    height: 6em;
+    margin: 1em;
+}
+
+.section-planes-flex{
+    display: flex;
+
+}
+
+.section-planes-flex-fila{
+    margin: 1em;
+}
+
+.btn-cancelar-avanzar{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+.btn button{
+    padding: 1em 8em;
+}
+
+footer{
+    background-color: bisque;
+}

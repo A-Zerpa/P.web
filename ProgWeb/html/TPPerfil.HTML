@@ -4,18 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/iniciarSecion.css">
     <title>Perfil</title>
 
 </head>
 
 <body>
+
+
     <div class="Perfil">
         <header>
-
-            <h2>Usuario</h2>
-            <img src="/ProgWeb/fotos/usuario.png" alt="" width="50" height="50">
-            <a href="">cerrar sesion</a>
-
+            <section class="header-perfil">
+                <article class="header-perfil-nombre-usuario">
+                    <h1>Nombre Usuario</h1>
+                    <a href="#">Cerrar Sesión</a>
+                </article>
+                <article class="header-perfil-usuario-img">
+                    <img src="/ProgWeb/fotos/usuario.png" alt="" width="50" height="50">
+                </article>
+            </section>
             <br><br><br><br>
         </header>
     </div>
@@ -24,10 +31,11 @@
 
     <div class="ingresarCuenta">
         <form action="">
-            <p>Usuario: <input type="text" name="nombreusuario"></p><br>
-            <p>Contraseña: <input type="password" name="Contraseña"></p><br>
-            <p>Repetir contraseña: <input type="password" name="repetircontraseña"></p><br><br>
-            <p> Fecha:<input type="date" name="fecha"> </p> <br>
+           <h2>crea tu usuario</h2> <br>
+            <p>Usuario:  <input type="text" name="nombreusuario"></p><br>
+            <p>Contraseña:  <input type="password" name="Contraseña"></p><br>
+            <p>Repetir contraseña:  <input type="password" name="repetircontraseña"></p><br>
+            <p> Fecha:  <input type="date" name="fecha"> </p> <br>
             <p> Email: <input type="email" name="email"> </p>
         </form>
 
@@ -36,24 +44,23 @@
         <a href="">eliminar usuario</a>
         <br><br>
 
-        <input type="submit" name="volverhome" value="volver a home">
-        <input type="submit" name="guardar" value="guardar">
+        <input type="submit" name="volverhome" value="volver a home" class="btn">
+        <input type="submit" name="guardar" value="guardar" class="btn">
 
     </div>
 
+    <footer class="footer">
 
-
+        <br><br>
+        <div class="Grupo">
+            <p>Gutierrez,Romina Melissa</p>
+            <p>Mata, Nicole Denise</p>
+            <p>Zerpa, Antonella Priscila</p>
+        </div>
+    </footer>
 
 </body>
-<footer>
 
-    <br><br>
-    <div class="Grupo">
-        <p>Gutierrez,Romina Melissa</p>
-        <p>Mata, Nicole Denise</p>
-        <p>Zerpa, Antonella Priscila</p>
-    </div>
-</footer>
 
 
 </html>

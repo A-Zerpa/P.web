@@ -1,0 +1,49 @@
+:root {
+    --color-header: #3045BF;
+    --color-hover: #F28B30;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Asap', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-perfil {
+    background-color: #3045BF;
+    color: #ffff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-perfil img {
+    height: 6em;
+    margin: 1em;
+}
+
+
+.header-perfil a {
+    color: #ffff;
+}
+
+.header-perfil-nombre-usuario a:hover{
+    color: #F28B30;
+}
+
+
+  footer {
+    background-color: #000000;
+    color: #ffff;
+    text-align: center;
+    padding: 1em;
+}
+
+footer div{
+    margin: 1em;
+}

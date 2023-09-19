@@ -5,27 +5,6 @@
     font-family: 'Asap', sans-serif;
 }
 
-a {
-    text-decoration: none;
-}
-
-.header-perfil {
-    background-color: #3045BF;
-    color: #ffff;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.header-perfil img {
-    height: 6em;
-    margin: 1em;
-}
-
-.header-perfil a {
-    color: #ffff;
-}
-
 .section-planes h1 {
     padding: 2em 0;
     text-align: center;
@@ -84,9 +63,6 @@ a {
 }
 
 
-footer {
-    background-color: bisque;
-}
 
 @media (max-width: 1024px) {
 

@@ -1,0 +1,88 @@
+/*. clase 
+  #Div
+  */
+
+/*
+ colores: 
+ Azul:  #3045BF
+ Naranja claro: #F28B30
+Blanco:  #F2F1F0
+  Naranja oscuro: #F25F29 
+ Marron: #400101 
+
+*/
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Asap', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+
+  background-color: #F25F29;
+
+}
+
+
+#registroA {
+  box-sizing: border-box;
+
+  width: 300px;
+
+
+  display: block;
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+
+  border: 3px solid black;
+
+  margin: 0 auto;
+
+
+
+  text-align: center;
+
+}
+
+.btn {
+  background-color: #F28B30;
+  color: white;
+
+  text-decoration: none;
+  padding: 10px 25px;
+  display: inline-block;
+  margin-top: 5px;
+
+  cursor: pointer;
+  border-radius: 16px;
+
+}
+
+.footer {
+  text-align: center;
+}
+
+/* PERFIL*/
+
+.ingresarCuenta{
+  box-sizing: border-box;
+
+  width: 400px;
+
+
+  display: block;
+  background-color: rgb(255, 255, 255);
+  padding: 35px;
+
+  border: 3px solid black;
+
+  margin: 0 auto;
+
+
+
+  text-align: center;
+}

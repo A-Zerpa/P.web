@@ -1,17 +1,3 @@
-/*. clase 
-  #Div
-  */
-
-/*
- colores: 
- Azul:  #3045BF
- Naranja claro: #F28B30
-Blanco:  #F2F1F0
-  Naranja oscuro: #F25F29 
- Marron: #400101 
-
-*/
-
 
 * {
   box-sizing: border-box;
@@ -21,11 +7,6 @@ Blanco:  #F2F1F0
   font-family: 'Titillium Web', sans-serif;
 }
 
-body {
-
-  background-color: #F25F29;
-
-}
 
 
 #registroA {
@@ -62,27 +43,17 @@ body {
 
 }
 
-.footer {
-  text-align: center;
-}
-
 /* PERFIL*/
 
-.ingresarCuenta{
+.ingresarCuenta {
   box-sizing: border-box;
 
   width: 400px;
-
-
   display: block;
   background-color: rgb(255, 255, 255);
   padding: 35px;
 
   border: 3px solid black;
-
   margin: 0 auto;
-
-
-
   text-align: center;
 }

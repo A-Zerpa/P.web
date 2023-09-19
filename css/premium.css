@@ -1,40 +1,97 @@
-body{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+    font-family: 'Asap', sans-serif;
 }
 
-.header-perfil{
+a {
+    text-decoration: none;
+}
+
+.header-perfil {
+    background-color: #3045BF;
+    color: #ffff;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.header-perfil img{
+.header-perfil img {
     height: 6em;
     margin: 1em;
 }
 
-.section-planes-flex{
+.header-perfil a {
+    color: #ffff;
+}
+
+.section-planes h1 {
+    padding: 2em 0;
+    text-align: center;
+
+}
+
+.section-planes-flex {
+    background-color: #F2F1F0;
+    padding: 3em;
     display: flex;
-
 }
 
-.section-planes-flex-fila{
-    margin: 1em;
+
+
+.section-planes-flex-fila {
+    padding: 0 2em;
+    text-align: center;
 }
 
-.btn-cancelar-avanzar{
+.section-planes-flex-fila h2 {
+    padding: 1em;
+}
+
+.section-planes-flex-fila img {
+    height: 15em;
+}
+
+.section-planes-flex-fila p {
+    padding: 1em 0;
+}
+
+.btn-cancelar-avanzar {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     padding: 2em;
 }
 
-.btn button{
+.btn button {
+    background-color: #F28B30;
+    color: #ffff;
     padding: 1em 8em;
+    margin: 1em;
+    text-align: center;
+    border-radius: 1em;
+    border-style: none;
+
+
+
 }
 
-footer{
+.btn button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 2px #F25F29;
+    cursor: pointer;
+}
+
+
+footer {
     background-color: bisque;
+}
+
+@media (max-width: 1024px) {
+
+    .section-planes-flex,
+    .btn-cancelar-avanzar {
+        flex-direction: column;
+    }
 }

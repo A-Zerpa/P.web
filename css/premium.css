@@ -5,10 +5,11 @@
     font-family: 'Asap', sans-serif;
 }
 
-.section-planes h1 {
-    padding: 2em 0;
-    text-align: center;
 
+.section-planes h1 {
+    padding: 1.5em 0;
+    text-align: center;
+    font-size: 2em;
 }
 
 .section-planes-flex {
@@ -43,20 +44,20 @@
     padding: 2em;
 }
 
-.btn button {
-    background-color: #F28B30;
+.btn a{
     color: #ffff;
+}
+.btn {
+    background-color: #F28B30;
     padding: 1em 8em;
     margin: 1em;
     text-align: center;
     border-radius: 1em;
     border-style: none;
 
-
-
 }
 
-.btn button:hover {
+.btn:hover {
     transform: scale(1.1);
     box-shadow: 0 0 2px #F25F29;
     cursor: pointer;

@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Asap', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+  
+  }
+
+.costado{
+    background-color: blue;
+    padding: 50px;
+    width: 100px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.menu{
+    padding: 50px;
+
+}
+
+
+.cuadrados {
+ width: 800px;
+ height: 800px;
+ border: black 5px solid;
+ float: right;
+ flex-direction: row;
+ flex-wrap: nowrap;
+ justify-content: flex-end;
+
+
+
+}
+.caja1{
+    background-color: coral;
+    width: 200px;
+    height: 200px;
+  
+}
+.caja2{
+    background-color: rgb(151, 78, 52);
+    width: 200px;
+    height: 200px;
+   
+
+}
+.caja3{
+    background-color: rgb(185, 105, 76);
+    width: 200px;
+    height: 200px;
+  
+}

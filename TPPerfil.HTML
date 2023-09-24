@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,44 +7,61 @@
     <link rel="stylesheet" href="css/principal.css">
     <link rel="stylesheet" href="css/perfil.css">
     <title>Perfil</title>
-
 </head>
 
 <body>
-    <header>
-        <section class="header-perfil">
-            <article class="header-perfil-nombre-usuario">
-                <h1>Nombre Usuario</h1>
-                <a href="TPIniciarSesion.html" target="_blank">Cerrar Sesión</a>
-            </article>
-            <article class="header-perfil-usuario-img">
-                <a href="TPPerfil.html" target="_blank"><img src="fotos/profile_pic.jpg" alt="profile-pic"></a>
-            </article>
-        </section>
-    </header>
-
-
-
-    <div class="ingresarCuenta">
-        <form action="">
-            <h2>crea tu usuario</h2> <br>
-            <p>Usuario: <input type="text" name="nombreusuario"></p><br>
-            <p>Contraseña: <input type="password" name="Contraseña"></p><br>
-            <p>Repetir contraseña: <input type="password" name="repetircontraseña"></p><br>
-            <p> Fecha: <input type="date" name="fecha"> </p> <br>
-            <p> Email: <input type="email" name="email"> </p>
-        </form>
-
-        <br><br>
-        <a href="">premium</a>
-        <a href="">eliminar usuario</a>
-        <br><br>
-
-        <input type="submit" name="volverhome" value="volver a home" class="btn">
-        <input type="submit" name="guardar" value="guardar" class="btn">
-
+    <div class="Perfil">
+        <header>
+            <section class="header-perfil">
+                <article class="header-perfil-nombre-usuario">
+                    <h1>Nombre Usuario</h1>
+                    <a href="/TPIniciarSesion.html">Cerrar Sesión</a>
+                </article>
+                <article class="header-perfil-usuario-img">
+                    <img src="fotos/profile_pic.jpg" alt="" width="50" height="50">
+                </article>
+            </section>
+            <br><br><br><br>
+        </header>
     </div>
 
+    <div class="ingresarCuenta">
+        <form action="" class="form">
+            <h1 class="title">Crea tu usuario</h1> <br>
+
+            <p>Nombre: <input class="inputContainer" type="text" name="nombreusuario"
+                   ></p><br>
+
+            <p>Contraseña: <input class="inputContainer" type="password" name="Contraseña"
+                    ></p><br>
+
+            <p><input class="inputContainer" type="password" name="repetircontraseña"
+                    placeholder="Repita la contraseña"></p><br>
+
+            <p>Fecha de nacimiento: <input class="inputContainer" type="date" name="fecha"> </p> <br>
+
+            <p>Email: <input class="inputContainer" type="email" name="email"> </p>
+
+
+            <div class="link">
+                <br>
+                <a href="/premium.html">Premium</a><br>
+                <a href="">Eliminar usuario</a>
+                <br>
+            </div>
+
+            <section class="btn guardar-volverhome">
+                <div class="btn">
+                    <button type="submit">Guardar</button>
+                    <button>Volver al inicio</button>
+                </div>
+
+            </section>
+    </div>
+    </form>
+
+
+    <br><br>
     <footer>
         <div>
             <p> Gutierrez Romina. 39.113.761 </p>

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="fotos/iconoPestañas.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/91c6e18db7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/principal.css">
     <link rel="stylesheet" href="css/buscar.css">
     <title>Buscar</title>
 </head>
+
 <body>
     <header>
         <section class="header-perfil">
@@ -28,8 +31,10 @@
                 <!-- menu -->
                 <div class="grid-main-menu-lateral-box1">
                     <ul>
-                        <li class="grid-main-menu-lateral-box1-item" id="item-home"><a href="index.html" target="_blank">Home</a></li>
-                        <li class="grid-main-menu-lateral-box1-item" id="item-buscar"><a href="buscar.html" target="_blank">Buscar</a>
+                        <li class="grid-main-menu-lateral-box1-item" id="item-home"><a href="index.html"
+                                target="_blank">Home</a></li>
+                        <li class="grid-main-menu-lateral-box1-item" id="item-buscar"><a href="buscar.html"
+                                target="_blank">Buscar</a>
                         </li>
                         <li class="grid-main-menu-lateral-box1-item"><a href="misAlbums.html" target="_blank">Mis
                                 Albums</a></li>
@@ -59,8 +64,16 @@
                 </div>
             </section>
 
-            <!-- contenedor2 -->
+            <!-- contenedor2 : buscador y albums-->
             <div>
+                <!-- buscador -->
+                <div id="search-bar">
+                    <label for="text"><input type="text" name="text" id="text" placeholder="Ingresa tu búsqueda"></label> 
+                    <article class="actions">
+                        
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </article>
+                </div>
                 <!-- muestra los albums -->
                 <section class="grid-main-albums">
                     <div class="grid-main-albums-box">
@@ -124,7 +137,7 @@
                         <a href="musicaSonando.html"><img src="fotos/grid-album-3.jpg" alt="album-cover"></a>
                     </div>
 
-                    
+
                 </section>
 
                 <!-- reproductor -->
@@ -151,6 +164,7 @@
             <p> Zerpa Antonella Priscila. 44.258.504</p>
         </div>
     </footer>
-    
+
 </body>
+
 </html>

@@ -1,25 +1,67 @@
-#item-buscar{
-    background-color: var(--color--hover-oscuro);
+#search-bar {
+  display: flex;
 }
+
+#search-bar input:focus-within {
+  border: solid 1px #aaa;
+  /* box-shadow: 0px 2px 7px rgb(189, 189, 189); */
+}
+
+#search-bar input {
+  width: 20em;
+  outline: none;
+  border: none;
+  border-radius: 2em;
+  padding: 0.7em;
+  margin: 1em;
+  font-size: 1em;
+  flex: auto;
+  box-shadow: 0px 2px 7px rgb(189, 189, 189);
+
+}
+
+#search-bar label {
+  display: flex;
+  flex: 1;
+}
+
+#search-bar .actions {
+  display: flex;
+  gap: 1em;
+}
+
+#search-bar .actions button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-size: 1.3em;
+}
+
+
+#item-buscar {
+  background-color: var(--color--hover-oscuro);
+}
+
 /* GRILLA ALBUMS */
 
 .grid-main-albums {
-    height: 800px;
-    margin: 1em;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill,minmax(15em,1fr));
-    /* columnas responsive */
-    grid-template-rows: repeat(3, 260px);
-    /* 3 filas con altura de 200px */
-    gap: 30px;
-    /* Espacio entre las celdas */
-    overflow: scroll;
-  }
-  
-  
-  .grid-main-albums-box img {
-    width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-  }
+  height: 800px;
+  margin: 1em;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  /* columnas responsive */
+  grid-template-rows: repeat(3, 260px);
+  /* 3 filas con altura de 200px */
+  gap: 30px;
+  /* Espacio entre las celdas */
+  overflow: scroll;
+}
+
+
+.grid-main-albums-box img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}

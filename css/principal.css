@@ -1,54 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
-  :root {
-      --color-header: #3045BF;
-      --color-hover: #F28B30;
-      --color-blanco: #F2F1F0;
+
+:root {
+    --color-header: #3045BF;
+    --color-hover: #F28B30;
+    --color--hover-oscuro: #f25f29;
+    --color-blanco: #F2F1F0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Asap', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+ul {
+    list-style: none;
   }
+  
 
-  * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Asap', sans-serif;
-  }
+/* HEADER */
+header {
+    background-color: var(--color-header);
+}
 
-  a {
-      text-decoration: none;
-  }
+.header-perfil {
+    color: var(--color-blanco);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
-  header {
-      background-color: var(--color-header);
-  }
-
-  .header-perfil {
-      color: var(--color-blanco);
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-  }
-
-  .header-perfil img {
-      height: 6em;
-      margin: 1em;
-  }
+.header-perfil img {
+    height: 6em;
+    margin: 1em;
+}
 
 
-  .header-perfil a {
-      color: var(--color-blanco);
-  }
+.header-perfil a {
+    color: var(--color-blanco);
+}
 
-  .header-perfil-nombre-usuario a:hover {
-      color: #F28B30;
-  }
+.header-perfil-nombre-usuario a:hover {
+    color: #F28B30;
+}
+
+/* MAIN */
+
+#grid-main {
+    background-color: var(--color-blanco);
+    display: grid;
+    grid-template-columns: auto 75%;
+}
+
+/* MENU LATERAL */
+
+.grid-main-menu-lateral {
+    margin: 1em;
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
 
 
-  footer {
-      background-color: #000000;
-      color: var(--color-blanco);
-      text-align: center;
-      padding: 1em;
-  }
+.grid-main-menu-lateral-box1-item a {
+    color: #000000;
+}
 
-  footer div {
-      margin: 1em;
-  }
+.grid-main-menu-lateral-box1-item {
+    padding: 2em 0.5em;
+    background-color: var(--color-blanco);
+}
+
+.grid-main-menu-lateral-box1-item:hover {
+    background-color: var(--color--hover-oscuro);
+}
+
+.grid-main-menu-lateral-box1-item a:hover {
+    color: var(--color-blanco);
+}
+
+/* MENU LATERAL: DESCRIPCION */
+.grid-main-menu-lateral-box2 img {
+    width: 100%;
+}
+
+
+.grid-main-menu-lateral-box2-descripcion {
+    margin: 1em 0em;
+}
+
+.grid-main-menu-lateral-box2-descripcion p {
+    margin-top: 1em;
+}
+
+/* AUDIO */
+.grid-main-reproductor audio {
+    width: 100%;
+}
+
+/* FOOTER */
+footer {
+    background-color: #000000;
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 1em;
+}
+
+footer div {
+    margin: 1em;
+}

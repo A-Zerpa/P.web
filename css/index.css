@@ -1,64 +1,5 @@
-:root {
-  --color-header: #3045BF;
-  --color-hover: #F28B30;
-  --color-blanco: #F2F1F0;
-  --color--hover-oscuro: #f25f29;
-}
 
-ul {
-  list-style: none;
-}
-
-/* MAIN */
-
-#grid-main {
-  background-color:var(--color-blanco);
-  display: grid;
-  grid-template-columns: auto 75%;
-}
-
-/* MENU LATERAL */
-
-.grid-main-menu-lateral {
-  margin: 1em;
-  display: flex;
-  gap: 2em;
-  flex-direction: column;
-  flex-wrap: wrap;
-
-}
-
-
-.grid-main-menu-lateral-box1-item a {
-  color: #000000;
-}
-
-.grid-main-menu-lateral-box1-item {
-  padding: 2em 0.5em;
-  background-color: var(--color-blanco);
-}
-
-.grid-main-menu-lateral-box1-item:hover {
-  background-color: var(--color--hover-oscuro);
-}
-
-.grid-main-menu-lateral-box1-item a:hover {
-  color: var(--color-blanco);
-}
-
-/* MENU LATERAL: DESCRIPCION */
-.grid-main-menu-lateral-box2 img {
-  width: 100%;
-}
-
-
-.grid-main-menu-lateral-box2-descripcion {
-  margin: 1em 0em;
-}
-
-.grid-main-menu-lateral-box2-descripcion p{
-  margin-top: 1em;
-}
+/* LO DEMAS ESTA EN EN PRINCIPAL.CSS */
 
 /* GRILLA ALBUMS */
 
@@ -81,9 +22,4 @@ ul {
   width: 100%;
   max-height: 100%;
   object-fit: cover;
-}
-
-/* AUDIO */
-.grid-main-reproductor audio{
-  width: 100%;
 }

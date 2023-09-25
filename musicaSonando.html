@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/musicaSonando.css">
     <title>Musica sonando</title>
 </head>
+
 <body>
     <header>
         <section class="header-perfil">
@@ -22,7 +24,60 @@
     </header>
 
     <main>
+        <article id="grid-main">
+            <!-- MENU LATERAL -->
+            <section class="grid-main-menu-lateral">
+                <!-- menu -->
+                <div class="grid-main-menu-lateral-box1">
+                    <ul>
+                        <li class="grid-main-menu-lateral-box1-item"><a href="index.html" target="_blank">Home</a></li>
+                        <li class="grid-main-menu-lateral-box1-item"><a href="buscar.html" target="_blank">Buscar</a>
+                        </li>
+                        <li class="grid-main-menu-lateral-box1-item"><a href="misAlbums.html" target="_blank">Mis
+                                Albums</a></li>
+                        <li class="grid-main-menu-lateral-box1-item"><a href="misFavoritas.html" target="_blank">Mis
+                                favoritas</a></li>
+                    </ul>
 
+                </div>
+
+                <!-- portada y descripcion del album en reproduccion -->
+                <div class="grid-main-menu-lateral-box2">
+                    <div class="grid-main-menu-lateral-box2-img">
+                        <img src="fotos/album-portada-menu-lateral.jpg" alt="album-portada-menu-lateral">
+                    </div>
+
+                    <div class="grid-main-menu-lateral-box2-descripcion">
+                        <!-- artista -->
+                        <h2>Artic Monkeys</h2>
+                        <!-- descripcion -->
+                        <p>"AM" es un álbum que muestra la versatilidad de Arctic Monkeys y su habilidad para
+                            evolucionar musicalmente sin perder su esencia. Ha sido aclamado por críticos y fanáticos
+                            por igual y se ha convertido en uno de los álbumes más influyentes y populares en la carrera
+                            de la banda.</p>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- contenedor2 -->
+            <div>
+                <!-- grid de canciones, album, duracion, reproducciones -->
+                <section class="grid-main-canciones">
+
+                </section>
+
+                <!-- reproductor -->
+                <section class="grid-main-reproductor">
+                    <audio controls>
+                        <source src="mp3/Arctic Monkeys  Do I Wanna Know.mp3">
+                    </audio>
+                </section>
+            </div>
+
+
+        </article>
     </main>
 
     <footer>
@@ -37,4 +92,5 @@
         </div>
     </footer>
 </body>
+
 </html>

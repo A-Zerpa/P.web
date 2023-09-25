@@ -6,24 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="fotos/iconoPestañas.png" type="image/x-icon">
     <link rel="stylesheet" href="css/principal.css">
-    <link rel="stylesheet" href="/css/iniciarSecion.css">
+    <link rel="stylesheet" href="css/iniciarSecion.css">
     <title>INICIAR SESION</title>
 </head>
 
 <body>
-    <br><br><br>
+    
 
     <section id="registroA">
         <div class="iniciar">
-            <h3> Ingrese su cuenta</h3> <br>
+            <h1 class="title">Ingrese su cuenta</h1> <br>
             <form action="registro">
-                <p>Usuario: <input type="text" name="nombreusuario"></p><br>
-                <p>Contraseña: <input type="password" name="Contraseña"></p><br>
+                <p>Usuario: <input class="inputContainer" type="text" name="nombreusuario"></p><br>
+                <p>Contraseña: <input class="inputContainer" type="password" name="Contraseña"></p><br>
         </div>
-        <input type="submit" name="sesion" value="iniciar sesion" class="btn"><br><br>
-        <a href="/ProgWeb/html/TPPerfil.HTML">registrarme</a>
-    </section>
+        <div class="link">
 
+
+            <div class="btn">
+                <button type="submit"> Iniciar sesion</button>
+            </div>
+            <a href="/TPPerfil.HTML">Registrarme</a>
+        </div>
+    </section>
+    <br>
 
     <footer>
         <div>
@@ -35,9 +41,3 @@
         <div>
             <p> Zerpa Antonella Priscila. 44.258.504</p>
         </div>
-    </footer>
-
-</body>
-
-
-</html>

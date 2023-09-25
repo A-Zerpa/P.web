@@ -51,6 +51,12 @@ header {
 }
 
 /* MAIN */
+#titulo-principal {
+    background-color: var(--color-blanco);
+    padding: 1em 0;
+    text-align: center;
+    font-size: 2em;
+}
 
 #grid-main {
     background-color: var(--color-blanco);

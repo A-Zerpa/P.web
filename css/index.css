@@ -1,5 +1,8 @@
 
 /* LO DEMAS ESTA EN EN PRINCIPAL.CSS */
+#item-home{
+  background-color:var(--color--hover-oscuro);
+}
 
 /* GRILLA ALBUMS */
 

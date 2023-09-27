@@ -39,7 +39,21 @@
 }
 
 
+.grid-main-menu-lateral-box2-img{
+    position: relative; 
+    display: inline-block;
+  
+  
+  }
 
+  
+  .boton-estrella{
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    background-color: #d7ca64; 
+    padding: 10px 10px;
+  }
 
 
 /* INTENTO DE GRID RESPONSIVE */

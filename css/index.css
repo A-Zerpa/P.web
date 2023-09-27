@@ -18,6 +18,7 @@
   gap: 30px;
   /* Espacio entre las celdas */
   overflow: scroll;
+
 }
 
 
@@ -25,4 +26,28 @@
   width: 100%;
   max-height: 100%;
   object-fit: cover;
+
+ 
+
+}
+
+.grid-main-menu-lateral-box2-img{
+  position: relative; 
+  display: inline-block;
+
+
+}
+
+.grid-main-albums-box{
+  position: relative; 
+  display: inline-block;
+
+}
+
+.boton-estrella{
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  background-color: #d7ca64; 
+  padding: 10px 10px; 
 }

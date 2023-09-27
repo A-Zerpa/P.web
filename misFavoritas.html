@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="fotos/iconoPestañas.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/91c6e18db7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/principal.css">
     <link rel="stylesheet" href="css/misFavoritas.css">
     <title>Mis Favoritas</title>
@@ -25,68 +26,358 @@
 
     <!-- similar a musicaSonando.html. Cambia el titulo del header y en misFavoritas.css cambia el color de la opcion Mis Favoritas del menu lateral-->
     <main>
-        <main>
-            <!-- TITULO -->
+        <!-- TITULO -->
         <h1 id="titulo-principal">Mis canciones favoritas</h1>
-            <article id="grid-main">
-                <!-- MENU LATERAL -->
-                <section class="grid-main-menu-lateral">
-                    <!-- menu -->
-                    <div class="grid-main-menu-lateral-box1">
-                        <ul>
-                            <li class="grid-main-menu-lateral-box1-item"><a href="index.html" target="_blank">Home</a>
-                            </li>
-                            <li class="grid-main-menu-lateral-box1-item"><a href="buscar.html"
-                                    target="_blank">Buscar</a>
-                            </li>
-                            <li class="grid-main-menu-lateral-box1-item"><a href="misAlbums.html" target="_blank">Mis
-                                    Albums</a></li>
-                            <li class="grid-main-menu-lateral-box1-item" id="item-favoritas"><a href="misFavoritas.html" target="_blank">Mis
-                                    favoritas</a></li>
-                        </ul>
+        <article id="grid-main">
+            <!-- MENU LATERAL -->
+            <section class="grid-main-menu-lateral">
+                <!-- menu -->
+                <div class="grid-main-menu-lateral-box1">
+                    <ul>
+                        <li class="grid-main-menu-lateral-box1-item"><a href="index.html" target="_blank">Home</a>
+                        </li>
+                        <li class="grid-main-menu-lateral-box1-item"><a href="buscar.html" target="_blank">Buscar</a>
+                        </li>
+                        <li class="grid-main-menu-lateral-box1-item"><a href="misAlbums.html" target="_blank">Mis
+                                Albums</a></li>
+                        <li class="grid-main-menu-lateral-box1-item" id="item-favoritas"><a href="misFavoritas.html"
+                                target="_blank">Mis
+                                favoritas</a></li>
+                    </ul>
 
-                    </div>
-
-                    <!-- portada y descripcion del album en reproduccion -->
-                    <div class="grid-main-menu-lateral-box2">
-                        <div class="grid-main-menu-lateral-box2-img">
-                            <img src="fotos/album-portada-menu-lateral.jpg" alt="album-portada-menu-lateral">
-                        </div>
-
-                        <div class="grid-main-menu-lateral-box2-descripcion">
-                            <!-- artista -->
-                            <h2>Artic Monkeys</h2>
-                            <!-- descripcion -->
-                            <p>"AM" es un álbum que muestra la versatilidad de Arctic Monkeys y su habilidad para
-                                evolucionar musicalmente sin perder su esencia. Ha sido aclamado por críticos y
-                                fanáticos
-                                por igual y se ha convertido en uno de los álbumes más influyentes y populares en la
-                                carrera
-                                de la banda.</p>
-
-                        </div>
-
-                    </div>
-                </section>
-
-                <!-- contenedor2 -->
-                <div>
-                    <!-- grid de canciones, album, duracion, reproducciones -->
-                    <section class="grid-main-canciones">
-
-                    </section>
-
-                    <!-- reproductor -->
-                    <section class="grid-main-reproductor">
-                        <audio controls>
-                            <source src="mp3/Arctic Monkeys  Do I Wanna Know.mp3">
-                        </audio>
-                    </section>
                 </div>
 
+                <!-- portada y descripcion del album en reproduccion -->
+                <div class="grid-main-menu-lateral-box2">
+                    <div class="grid-main-menu-lateral-box2-img">
+                        <img src="fotos/album-portada-menu-lateral.jpg" alt="album-portada-menu-lateral">
+                    </div>
 
-            </article>
-        </main>
+                    <div class="grid-main-menu-lateral-box2-descripcion">
+                        <!-- artista -->
+                        <h2>Artic Monkeys</h2>
+                        <!-- descripcion -->
+                        <p>"AM" es un álbum que muestra la versatilidad de Arctic Monkeys y su habilidad para
+                            evolucionar musicalmente sin perder su esencia. Ha sido aclamado por críticos y
+                            fanáticos
+                            por igual y se ha convertido en uno de los álbumes más influyentes y populares en la
+                            carrera
+                            de la banda.</p>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- contenedor2 -->
+            <div>
+                <!-- grid de canciones, album, duracion, reproducciones -->
+                <section class="grid-main-canciones">
+                    <!-- PRIMERA FILA DE LA TABLA -->
+                    <div class="grid-main-canciones-titulo">
+                        <h3>icono</h3>
+                    </div>
+                    <div class="grid-main-canciones-titulo">
+                        <h3>Cancion</h3>
+                    </div>
+                    <div class="grid-main-canciones-titulo">
+                        <h3>Album</h3>
+                    </div>
+                    <div class="grid-main-canciones-titulo">
+                        <h3>Duración</h3>
+                    </div>
+                    <div class="grid-main-canciones-titulo">
+                        <h3>Reproducciones</h3>
+                    </div>
+
+                    <!-- FILAS DE CANCIONES -->
+
+                    <!-- FILA 1 -->
+                    <div class="grid-main-canciones-filas">
+                        <button><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <!-- display flex solo en las star -->
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Corazón Vacío</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Corazón Vacío</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    
+                    <div class="grid-main-canciones-filas">
+                        2:40
+                    </div>
+                    <div class="grid-main-canciones-filas">
+                        15000
+                    </div>
+
+
+                    <!-- FILA 2-->
+                    <div class="grid-main-canciones-filas">
+                        <button><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <!-- display flex solo en las star -->
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Kill Bill</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Sos</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    
+                    <div class="grid-main-canciones-filas">
+                        2:33
+                    </div>
+                    <div class="grid-main-canciones-filas">
+                        17300
+                    </div>
+
+                    <!-- FILA 3 -->
+                    <div class="grid-main-canciones-filas">
+                        <button><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <!-- display flex solo en las star -->
+                    <div class="grid-main-canciones-filas-star">
+                        <p>LALA</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    <div class="grid-main-canciones-filas-star">
+                        <p>La Vida es Una</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    
+                    <div class="grid-main-canciones-filas">
+                        3:17
+                    </div>
+                    <div class="grid-main-canciones-filas">
+                        133000
+                    </div>
+
+                    <!-- FILA 4-->
+                    <div class="grid-main-canciones-filas">
+                        <button><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <!-- display flex solo en las star -->
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Paint The Town Red</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Paint The Town Red</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    
+                    <div class="grid-main-canciones-filas">
+                        3:50
+                    </div>
+                    <div class="grid-main-canciones-filas">
+                        133000
+                    </div>
+
+                    <!-- FILA 5-->
+                    <div class="grid-main-canciones-filas">
+                        <button><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <!-- display flex solo en las star -->
+                    <div class="grid-main-canciones-filas-star">
+                        <p>As It Was</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Harry's House</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    
+                    <div class="grid-main-canciones-filas">
+                        2:47
+                    </div>
+                    <div class="grid-main-canciones-filas">
+                        250000
+                    </div>
+
+                    <!-- FILA 6-->
+                    <div class="grid-main-canciones-filas">
+                        <button><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <!-- display flex solo en las star -->
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Flowers</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Endless Summer Vacation</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    
+                    <div class="grid-main-canciones-filas">
+                        3:20
+                    </div>
+                    <div class="grid-main-canciones-filas">
+                        450000
+                    </div>
+
+                    <!-- FILA 7-->
+                    <div class="grid-main-canciones-filas">
+                        <button><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <!-- display flex solo en las star -->
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Columbia</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Columbia</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    
+                    <div class="grid-main-canciones-filas">
+                        3:06
+                    </div>
+                    <div class="grid-main-canciones-filas">
+                        250080
+                    </div>
+
+                    <!-- FILA 8-->
+                    <div class="grid-main-canciones-filas">
+                        <button><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <!-- display flex solo en las star -->
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Engel</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Sehnsucht</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    
+                    <div class="grid-main-canciones-filas">
+                        4:24
+                    </div>
+                    <div class="grid-main-canciones-filas">
+                        550080
+                    </div>
+
+                    <!-- FILA 9-->
+                    <div class="grid-main-canciones-filas">
+                        <button><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <!-- display flex solo en las star -->
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Ex-Mortis</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Welcome To Horrorwood</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    
+                    <div class="grid-main-canciones-filas">
+                        3:21
+                    </div>
+                    <div class="grid-main-canciones-filas">
+                        42300
+                    </div>
+
+                    <!-- FILA 10-->
+                    <div class="grid-main-canciones-filas">
+                        <button><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <!-- display flex solo en las star -->
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Back To Me</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Back To Me</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    
+                    <div class="grid-main-canciones-filas">
+                        3:00
+                    </div>
+                    <div class="grid-main-canciones-filas">
+                        820080
+                    </div>
+
+                    <!--  FILA 11-->
+                    <div class="grid-main-canciones-filas">
+                        <button><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <!-- display flex solo en las star -->
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Columbia</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Columbia</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    
+                    <div class="grid-main-canciones-filas">
+                        3:06
+                    </div>
+                    <div class="grid-main-canciones-filas">
+                        250080
+                    </div>
+
+                    <!--  FILA 12-->
+                    <div class="grid-main-canciones-filas">
+                        <button><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <!-- display flex solo en las star -->
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Columbia</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Columbia</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    
+                    <div class="grid-main-canciones-filas">
+                        3:06
+                    </div>
+                    <div class="grid-main-canciones-filas">
+                        250080
+                    </div>
+
+                    <!--  FILA 13-->
+                    <div class="grid-main-canciones-filas">
+                        <button><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <!-- display flex solo en las star -->
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Columbia</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Columbia</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    
+                    <div class="grid-main-canciones-filas">
+                        3:06
+                    </div>
+                    <div class="grid-main-canciones-filas">
+                        250080
+                    </div>
+
+                </section>
+
+                <!-- reproductor -->
+                <section class="grid-main-reproductor">
+                    <audio controls>
+                        <source src="mp3/Arctic Monkeys  Do I Wanna Know.mp3">
+                    </audio>
+                </section>
+            </div>
+
+
+        </article>
     </main>
 
     <footer>

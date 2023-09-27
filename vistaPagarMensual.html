@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fotos/iconoPestañas.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/vistaPagar.css">
+    <title>Vista Pagar</title>
+</head>
+
+<body>
+    <header>
+        <section class="header-perfil">
+            <article class="header-perfil-nombre-usuario">
+                <h1>Nombre Usuario</h1>
+                <a href="TPIniciarSesion.html" target="_blank">Cerrar Sesión</a>
+            </article>
+            <article class="header-perfil-usuario-img">
+                <a href="TPPerfil.html" target="_blank"><img src="fotos/profile_pic.jpg" alt="profile-pic"></a>
+            </article>
+        </section>
+    </header>
+    <main>
+        <section class="section-descripcion-planes">
+                <h1>Elegiste el plan mensual</h1>
+            <article class="section-plan">
+                <div class="imagen-plan">
+                    <img src="fotos/planMensual.jpg" alt="">
+                </div>
+                <div class="descripcion-del-plan"></div>
+                <p>Este plan te ofrece acceso ilimitado a toda tu música favorita durante un mes completo. Disfruta de 
+                    millones de canciones, crea listas de reproducción personalizadas y descubre nuevos artistas y 
+                    álbumes. Además, puedes escuchar sin conexión a internet en tus dispositivos móviles para que 
+                    la música nunca se detenga. Precio: $9.99 al mes.</p>
+            </article>
+        </section>
+       
+        <div class="contenedor-del-formulario">
+            <form action="#" class="formulario-de-pago">
+                <div class="caja">
+                    <label for="tarjeta">Tarjeta</label>
+                    <input type="text" name="tarjeta" placeholder="">
+                </div>
+                <div class="caja">
+                    <label for="vencimiento">VTO</label>
+                    <input type="date" name="vencimiento" placeholder="">
+                </div>
+                <div class="caja">
+                    <label for="cvc">CVC</label>
+                    <input type="text" name="cvc" placeholder="">
+                </div>
+                <div class="caja">
+                    <label for="nombreApellido">Nombre y apellido</label>
+                    <input type="text" name="nombreApellido" placeholder="">
+                </div>
+                <div  class="caja-botones">
+                    <button type="submit">CANCELAR</button>
+                    <button type="submit">PAGAR</button>
+                </div>      
+            </form>
+            </div>
+    </main> 
+
+    <footer>
+        <div>
+            <p> Gutierrez Romina. 39.113.761 </p>
+        </div>
+        <div>
+            <p> Mata Nicole Denise. 42.647.596 </p>
+        </div>
+        <div>
+            <p> Zerpa Antonella Priscila. 44.258.504</p>
+        </div>
+    </footer>
+</body>
+
+</html>

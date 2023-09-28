@@ -38,39 +38,4 @@
     border-style: none;
 }
 
-.fa-regular fa-star:hover{
-    background-color: aqua;
-    color: aqua;
-}
-
-
-
-
-.grid-main-menu-lateral-box2-img{
-    position: relative; 
-    display: inline-block;
-  
-  
-  }
-
-  
-  .boton-estrella{
-    position: absolute; 
-    top: 0; 
-    right: 0; 
-    background-color: #d7ca64; 
-    padding: 10px 10px;
-  }
-
-
-/* INTENTO DE GRID RESPONSIVE */
-
-/* @media (max-width: 1024px) {
-
-    .grid-main-canciones {
-        grid-template-columns: 5% repeat(2, minmax(10em, 1fr));
-        grid-auto-rows: 50px;
-    }
-}*/
-
 

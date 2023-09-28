@@ -2,8 +2,16 @@ body{
     padding: 0;
     box-sizing: border-box;
     margin: 0px;
-   /* background-color: aqua;*/
     font-family: 'Asap', sans-serif;
+}
+
+#titulo{
+    font-size: 40px;
+    font-weight: bold;
+    color: #007bff;
+    text-align: left;
+    margin-left: 500px;
+    letter-spacing: 8px;
 }
 
 /* AQUI COMIENZA SECCION DESCRIPCION DE PLANES*/
@@ -13,19 +21,8 @@ body{
     text-align: center;
 }
 
-
-.section-descripcion-planes h1 {
-  /*  padding: 1em 5em;
-    text-align: left;*/
-    font-size: 26px;
-}
-
 /*SECCION INFORMACION DEL PLAN*/
 .section-plan {
-   /* background-color: beige;
-    padding:  0em 1em;
-    margin: 0em 14em;
-    display: flex;*/
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -38,22 +35,24 @@ body{
     flex: 1;
     text-align: center;
     padding: 20px;
-   /* max-width: 100%;
-    height: auto;*/
 }
-
-/*.imagen-plan img {
-    max-width: 100%;
-    height: auto;
-}*/
 
 .section-plan img {
     height: 15em;
 }
 
 .section-plan p {
+    font-size: 18px;
+    font-weight: bolder;
     padding: 4em 2em;
     text-align: justify;
+    letter-spacing: 1px;
+    font-style: oblique;
+}
+
+.section-plan p span{
+    background-color: yellow;
+    font-weight: bold;
 }
 
 .descripcion-plan {
@@ -64,15 +63,11 @@ body{
 
 
 .contenedor-del-formulario{
-  /*  background-color: rgb(25, 43, 59);*/
     width: 80%;
     margin: 0px auto;
-    margin-top: 0px;/*centrar el formulario*/
+    margin-top: 0px;
     padding: 40px;
- /*   border: 1px solid gray;/*para saber que espacio ocupa el formulario*/
- /*   color: aliceblue;/*color del texto*/
- /*   border-radius: 8px ;/*esquinas redondeada*/
-    box-shadow: 0px 0px 8px gray ;/*sombra alrededor del formulario no se nota xq es muy oscuro*/
+    box-shadow: 0px 0px 8px gray ;
 }
 
 .formulario-de-pago{
@@ -96,9 +91,12 @@ body{
 }
 
 .caja label {
-    flex-basis: 30%;/*distancia el label del input*/
+    flex-basis: 30%;
     padding-right: 10px;
     text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+
 }
 
 .caja input{
@@ -106,33 +104,45 @@ body{
    padding: 5px;
 }
 
-.caja input:focus{/*saca el borde que se produce cuando se hace click*/
+.caja input:focus{
     outline: none;
     border-bottom: 2px solid blueviolet ;
 }
 
 .caja-botones{
-    display: flex;/*me quita el espacion entre los btn*/
+    display: flex;
     width: 100%;   
-    justify-content: center;
- /*   background-color: aqua;*/
+    justify-content: space-around;
     padding: 35px; 
     
 }
 
-button{
-    background-color: #F28B30;
-    color: #ffff;
-    padding: 1em 8em;
-    margin: 1em;
-    text-align: center;
-    border-radius: 1em;
-    border-style: none;
-    transition: all ease 300ms;/*cambiar el hover lenta*/
+.boton {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2em;
 }
 
-button:hover{
-    background-color: rgb(109, 53, 7);
+.boton a{
+  color: #f7f3f3;
+}
+.boton {
+  background-color: #F28B30;
+  padding: 1em 8em;
+  margin: 1em;
+  text-align: center;
+  border-radius: 1em;
+  border-style: none;
+  font-weight: bold;
+  color: aliceblue;
+
+}
+
+.boton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 2px #F25F29;
+  cursor: pointer;
 }
 
 

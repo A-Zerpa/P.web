@@ -54,7 +54,7 @@ header {
 /* MAIN */
 #titulo-principal {
     background-color: var(--color-blanco);
-    padding: 1em 0;
+    padding: 1.2em 0;
     text-align: center;
     font-size: 2em;
 }

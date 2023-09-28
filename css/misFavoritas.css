@@ -4,39 +4,46 @@
 
 /* grid de 5 columnas. La primera seria auto y las demas responsive */
 .grid-main-canciones {
-    background-color: rgb(205, 177, 231);
     height: 800px;
-    border-style: solid;
+    margin: 0.5em;
+    margin-top: 1em;
 
     display: grid;
     grid-template-columns: 5% repeat(4, minmax(10em, 1fr));
     grid-auto-rows: 60px;
-    gap: 10px;
     overflow: scroll;
 }
 
 
 /* , agrego la clase de los p xq comparten el display y lo demas */
 .grid-main-canciones-titulo, .grid-main-canciones-filas {
-    background-color: burlywood;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.grid-main-canciones-filas{
-    background-color: rgb(80, 204, 107);
-}
 
 .grid-main-canciones-filas-star {
     width: 100%;
-    background-color: bisque;
     display: flex;
     align-items: center;
-    justify-content: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 1em;
 }
+
+.grid-main-canciones  button {
+    padding: 0.5em;
+    color: var(--color--hover-oscuro);
+    border-style: none;
+}
+
+.fa-regular fa-star:hover{
+    background-color: aqua;
+    color: aqua;
+}
+
+
 
 
 .grid-main-menu-lateral-box2-img{

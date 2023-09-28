@@ -15,47 +15,48 @@
         <section class="header-perfil">
             <article class="header-perfil-nombre-usuario">
                 <h1>Nombre Usuario</h1>
-                <a href="TPIniciarSesion.html">Cerrar Sesión</a>
+                <a href="TPIniciarSesion.html" target="_blank">Cerrar Sesión</a>
             </article>
             <article class="header-perfil-usuario-img">
-                <img src="fotos/profile_pic.jpg" alt="" width="50" height="50">
+                <a href="TPPerfil.html" target="_blank"><img src="fotos/profile_pic.jpg" alt="profile-pic"></a>
             </article>
         </section>
     </header>
+    <main>
+        <div class="ingresarCuenta">
+            <form action="" class="form">
+                <h2 class="title">regístrate</h2> <br>
 
-    <div class="ingresarCuenta">
-        <form action="" class="form">
-            <h1 class="title">Crea tu usuario</h1> <br>
+                <p>Nombre: <input class="inputContainer" type="text" name="nombreusuario"></p><br>
 
-            <p>Nombre: <input class="inputContainer" type="text" name="nombreusuario"></p><br>
+                <p>Contraseña: <input class="inputContainer" type="password" name="Contraseña"></p><br>
 
-            <p>Contraseña: <input class="inputContainer" type="password" name="Contraseña"></p><br>
+                <p><input class="inputContainer" type="password" name="repetircontraseña"
+                        placeholder="Repita la contraseña"></p><br>
 
-            <p><input class="inputContainer" type="password" name="repetircontraseña"
-                    placeholder="Repita la contraseña"></p><br>
+                <p>Fecha de nacimiento: <input class="inputContainer" type="date" name="fecha"> </p> <br>
 
-            <p>Fecha de nacimiento: <input class="inputContainer" type="date" name="fecha"> </p> <br>
-
-            <p>Email: <input class="inputContainer" type="email" name="email"> </p>
+                <p>Email: <input class="inputContainer" type="email" name="email"> </p>
 
 
-            <div class="link">
-                <br>
-                <a href="premium.html">Premium</a><br>
-                <a href="TPIniciarSesion.html">Eliminar usuario</a>
-                <br>
-            </div>
-
-            <section class="btn guardar-volverhome">
-                <div class="btn">
-                    <button type="submit">Guardar</button>
-                    <button>Volver al inicio</button>
+                <div class="link">
+                    <br>
+                    <a href="premium.html" id="medio">Premium</a><br>
+                    <a href="TPIniciarSesion.html" id="medio">Eliminar usuario</a>
+                    <br>
                 </div>
 
-            </section>
-    </div>
+                <section class="btn guardar-volverhome">
+                    <div class="btn">
+                        <button type="submit">Guardar</button>
+                        <button><a href="index.html" class="volver-inicio">Volver al inicio</a></button>
+                    </div>
 
-    <br><br>
+                </section>
+        </div>
+
+     
+    </main>
     <footer>
         <div>
             <p> Gutierrez Romina. 39.113.761 </p>
@@ -68,4 +69,6 @@
         </div>
     </footer>
 
-    </bo
+
+
+</body>

@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="fotos/iconoPestañas.png" type="image/x-icon">
     <link rel="stylesheet" href="css/principal.css">
     <link rel="stylesheet" href="css/vistaPagar.css">
-    <title>Vista Pagar</title>
+    <title>Vista Pagar plan mensual</title>
 </head>
 
 <body>
@@ -24,16 +24,18 @@
     </header>
     <main>
         <section class="section-descripcion-planes">
-                <h1>Elegiste el plan mensual</h1>
+                <h1 id="titulo">Elegiste el plan mensual</h1>
             <article class="section-plan">
                 <div class="imagen-plan">
                     <img src="fotos/planMensual.jpg" alt="">
                 </div>
-                <div class="descripcion-del-plan"></div>
-                <p>Este plan te ofrece acceso ilimitado a toda tu música favorita durante un mes completo. Disfruta de 
+                <div class="descripcion-del-plan">
+                    <p>Este plan te ofrece acceso ilimitado a toda tu música favorita durante un mes completo. Disfruta de 
                     millones de canciones, crea listas de reproducción personalizadas y descubre nuevos artistas y 
                     álbumes. Además, puedes escuchar sin conexión a internet en tus dispositivos móviles para que 
-                    la música nunca se detenga. Precio: $9.99 al mes.</p>
+                    la música nunca se detenga. <span>Precio: $9.99 </span>al mes.</p>
+                </div>
+
             </article>
         </section>
        
@@ -55,10 +57,10 @@
                     <label for="nombreApellido">Nombre y apellido</label>
                     <input type="text" name="nombreApellido" placeholder="">
                 </div>
-                <div  class="caja-botones">
-                    <button type="submit">CANCELAR</button>
-                    <button type="submit">PAGAR</button>
-                </div>      
+           <div  class="caja-botones">
+                    <a href="index.html" class="boton">CANCELAR</a></button>
+                    <a href="index.html" class="boton">PAGAR</a></button>
+                </div>       
             </form>
             </div>
     </main> 

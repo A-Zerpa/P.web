@@ -5,14 +5,6 @@ body{
     font-family: 'Asap', sans-serif;
 }
 
-#titulo{
-    font-size: 40px;
-    font-weight: bold;
-    color: #007bff;
-    text-align: left;
-    margin-left: 500px;
-    letter-spacing: 8px;
-}
 
 /* AQUI COMIENZA SECCION DESCRIPCION DE PLANES*/
 .section-descripcion-planes{
@@ -42,16 +34,12 @@ body{
 }
 
 .section-plan p {
-    font-size: 18px;
-    font-weight: bolder;
+    font-size: 1.1em;
     padding: 4em 2em;
     text-align: justify;
-    letter-spacing: 1px;
-    font-style: oblique;
 }
 
 .section-plan p span{
-    background-color: yellow;
     font-weight: bold;
 }
 

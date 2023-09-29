@@ -25,26 +25,3 @@
     object-fit: cover;
   }
 
-
-
-  .grid-main-menu-lateral-box2-img{
-    position: relative; 
-    display: inline-block;
-  
-  
-  }
-  
-  .grid-main-albums-box{
-    position: relative; 
-    display: inline-block;
-  
-  }
-  
-  .boton-estrella{
-    position: absolute; 
-    top: 0; /* Posiciona el botón en la parte superior del contenedor */
-    right: 0; /* Posiciona el botón en la esquina superior derecha del contenedor */
-    background-color: #d7ca64; /* Color de fondo del botón  */
-    padding: 10px 10px; /* Añade espacio alrededor del texto del botón */
-  }
-  

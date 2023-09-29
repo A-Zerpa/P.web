@@ -27,8 +27,14 @@ ul {
 /* HEADER */
 header {
     background-color: var(--color-header);
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
+
+
 
 .header-perfil {
     color: var(--color-blanco);

@@ -6,38 +6,66 @@
 }
 
 main{
-
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.btn button {
-  background-color: #F28B30;
+/**/
+
+
+.btn-guardar-volverhome {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2em;
+}
+
+.btn a{
   color: #ffff;
-  padding: 1em 2em;
+}
+
+.btn {
+  background-color: #F28B30;
+  padding: 1em 5em;
   margin: 1em;
   text-align: center;
   border-radius: 1em;
   border-style: none;
+ 
+}
+
+.btn a{
+  text-anchor: 1em;
 
 }
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 2px #F25F29;
+  cursor: pointer;
+}
+
+
+
+/**/
 
 .inputContainer {
   gap: 1em;
   color: #747373;
   font-size: 1rem;
   padding: 4px 4px;
+  
 }
 
 .volver-inicio {
   color: white;
 }
 
-.btn button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 2px #F25F29;
-  cursor: pointer;
-}
+
+
+
+
+
 
 #medio:link {
   color: #ffffff;
@@ -72,7 +100,7 @@ main{
 .ingresarCuenta {
   box-sizing: border-box;
 
-  width: 400px;
+  width: 700px;
   display: block;
   background-color: rgb(255, 255, 255);
   padding: 35px;

@@ -1,79 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="fotos/iconoPestañas.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/principal.css">
-    <link rel="stylesheet" href="css/perfil.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="fotos/iconoPestañas.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/principal.css" />
+    <link rel="stylesheet" href="css/perfil.css" />
     <title>Perfil</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <section class="header-perfil">
-            <article class="header-perfil-nombre-usuario">
-                <h1>Nombre Usuario</h1>
-                <a href="TPIniciarSesion.html" target="_blank">Cerrar Sesión</a>
-            </article>
-            <article class="header-perfil-usuario-img">
-                <a href="TPPerfil.html" target="_blank"><img src="fotos/profile_pic.jpg" alt="profile-pic"></a>
-            </article>
-        </section>
+      <section class="header-logo">
+        <a href="index.html"><img src="fotos/logoo.png" alt="logo-imagen" /></a>
+      </section>
+      <section class="header-perfil">
+        <article class="header-perfil-nombre-usuario">
+          <h1>Nombre Usuario</h1>
+          <a href="TPIniciarSesion.html" target="_blank">Cerrar Sesión</a>
+        </article>
+        <article class="header-perfil-usuario-img">
+          <a href="TPPerfil.html" target="_blank"
+            ><img src="fotos/profile_pic.jpg" alt="profile-pic"
+          /></a>
+        </article>
+      </section>
     </header>
     <main>
-        <div class="ingresarCuenta">
-            <form action="" class="form">
-                
+      <div class="ingresarCuenta">
+        <form action="" class="form">
+          <div class="caja">
+            <label>Nombre:</label>
+            <input class="inputContainer" type="text" name="nombreusuario" />
 
-                <p>Nombre: <input class="inputContainer" type="text" name="nombreusuario"></p><br>
+          </div>
 
-                <p>Contraseña: <input class="inputContainer" type="password" name="Contraseña"></p><br>
+          <div class="caja">
+            <label>Contraseña:</label>
+            <input class="inputContainer" type="password" name="Contraseña" />
+          </div>
+          <div class="caja">
+           <label>Repita contraseña: </label>
+            <input
+              class="inputContainer"
+              type="password"
+              name="repetircontraseña"
+            
+            />
+          </div>
+          <div class="caja">
+            <label>Fecha de nacimiento: </label
+            ><input class="inputContainer" type="date" name="fecha" />
+          </div>
+          <div class="caja">
+            <label>Email: </label>
+            <input class="inputContainer" type="email" name="email" />
+          </div>
+        </form>
 
-                <p><input class="inputContainer" type="password" name="repetircontraseña"
-                        placeholder="Repita la contraseña"></p><br>
-
-                <p>Fecha de nacimiento: <input class="inputContainer" type="date" name="fecha"> </p> <br>
-
-                <p>Email: <input class="inputContainer" type="email" name="email"> </p>
-
-
-                <div class="link">
-                    <br>
-                    <a href="premium.html" id="medio">Premium</a><br>
-                    <a href="TPIniciarSesion.html" id="medio">Eliminar usuario</a>
-                    <br>
-                </div>
-
-                <section class="btn-guardar-volverhome">
-                    <div class="btn">
-                        <a href="#">Guardar</a>
-                    </div>
-                    
-        
-
-                    <div class="btn">
-                      <a href="index.html" class="volver-inicio">Inicio</a>
-                    </div>
-
-                </section>
+        <div class="link">
+          <br />
+          <a href="premium.html" id="medio">Premium</a><br />
+          <a href="TPIniciarSesion.html" id="medio">Eliminar usuario</a> 
+          <br />
         </div>
 
-     
+        <section class="btn-guardar-volverhome">
+          <div class="btn">
+            <a href="#">Guardar</a>
+          </div>
+
+          <div class="btn">
+            <a href="index.html" class="volver-inicio">Inicio</a>
+          </div>
+        </section>
+      </div>
     </main>
+
     <footer>
-        <div>
-            <p> Gutierrez Romina. 39.113.761 </p>
-        </div>
-        <div>
-            <p> Mata Nicole Denise. 42.647.596 </p>
-        </div>
-        <div>
-            <p> Zerpa Antonella Priscila. 44.258.504</p>
-        </div>
+      <div>
+        <p>Gutierrez Romina. 39.113.761</p>
+      </div>
+      <div>
+        <p>Mata Nicole Denise. 42.647.596</p>
+      </div>
+      <div>
+        <p>Zerpa Antonella Priscila. 44.258.504</p>
+      </div>
     </footer>
-
-
-
-</body>
+  </body>
+</html>

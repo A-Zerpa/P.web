@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="css/principal.css" />
     <link rel="stylesheet" href="css/perfil.css" />
+    <script src="js/perfil.js"></script>
     <title>Perfil</title>
   </head>
 
@@ -30,42 +31,51 @@
         </article>
       </section>
     </header>
+
     <main>
-      <div class="ingresarCuenta">
-        <form action="" class="form">
-          <div class="caja">
-            <label>Nombre:</label>
-            <input class="inputContainer" type="text" name="nombreusuario" />
 
+      <div class="formulario-ingresar"><br>
+        <form action="" class="formulario" method="get" id="formularioIngresar">
+           <div class="caja">
+             <label for="usuario" class="formulario_label">Usuario</label>
+              <div class="formulario_input-grupo">
+               <input type="text" class="formulario_input" name="usuario" placeholder="" id="usuario">
+              </div>
           </div>
 
           <div class="caja">
-            <label>Contraseña:</label>
-            <input class="inputContainer" type="password" name="Contraseña" />
-          </div>
+            <label for="fecha-nacimento" class="formulario_label">Fecha de nacimiento</label>
+             <div class="formulario_input-grupo">
+                <input type="date" class="formulario_input" name="fecha-nacimento" placeholder="" id="fechaDeNacimiento">
+              </div>
+           </div>
+
           <div class="caja">
-           <label>Repita contraseña: </label>
-            <input
-              class="inputContainer"
-              type="password"
-              name="repetircontraseña"
-            
-            />
+            <label for="contraseña" class="formulario_label">Contraseña</label>
+              <div class="formulario_input-grupo">
+               <input type="password" class="formulario_input" name="contraseña" placeholder="" id="contraseña">
+              </div>
           </div>
+
           <div class="caja">
-            <label>Fecha de nacimiento: </label
-            ><input class="inputContainer" type="date" name="fecha" />
+           <label for="repetir-contraseña" class="formulario_label">Repetir contraseña</label>
+             <div class="formulario_input-grupo">
+               <input type="password" class="formulario_input" name="repetir-contraseña" placeholder="" id="contraseñaRepetida">
+             </div>
           </div>
+
           <div class="caja">
-            <label>Email: </label>
-            <input class="inputContainer" type="email" name="email" />
+           <label for="email" class="formulario_label">Email</label>
+              <div class="formulario_input-grupo">
+                <input type="email" class="formulario_input" name="email" placeholder="" id="email">
+              </div>
           </div>
         </form>
-
+            <br>
         <div class="link">
           <br />
           <a href="premium.html" id="medio">Premium</a><br />
-          <a href="TPIniciarSesion.html" id="medio">Eliminar usuario</a> 
+          <a href="TPIniciarSesion.html" id="medio">Eliminar usuario</a>
           <br />
         </div>
 

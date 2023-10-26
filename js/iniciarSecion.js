@@ -2,12 +2,12 @@ window.onload = function () {
 	let iniciar;
 	
 	iniciar = document.getElementById("iniciar-sesion");
-	iniciar.onclick = iniciarSecion;
+	iniciar.onclick = iniciarSesion;
 }
 
 
 
-function iniciarSecion () {
+function iniciarSesion () {
 
 	let validar = true;
 	

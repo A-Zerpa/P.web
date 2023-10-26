@@ -1,41 +1,29 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Asap', sans-serif;
-}
 
-main{
+
+main {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-/**/
 
+
+.btn {
+  background-color: #F28B30;
+  padding: 1em 4em;
+  margin: 1px;
+  text-align: center;
+  border-radius: 1em;
+  border-style: none;
+}
 
 .btn-guardar-volverhome {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  padding: 2em;
+  padding: 1em;
 }
 
-.btn a{
+.btn a {
   color: #ffff;
-}
-
-.btn {
-  background-color: #F28B30;
-  padding: 1em 5em;
-  margin: 1em;
-  text-align: center;
-  border-radius: 1em;
-  border-style: none;
- 
-}
-
-.btn a{
-  text-anchor: 1em;
 
 }
 
@@ -46,25 +34,11 @@ main{
 }
 
 
-
 /**/
-
-.inputContainer {
-  gap: 1em;
-  color: #747373;
-  font-size: 1rem;
-  padding: 4px 4px;
-  
-}
 
 .volver-inicio {
   color: white;
 }
-
-
-
-
-
 
 
 #medio:link {
@@ -76,7 +50,7 @@ main{
 }
 
 #medio:focus {
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
   background: #dd9f89;
 }
 
@@ -90,24 +64,43 @@ main{
   color: #ffffff;
 }
 
-.title {
-  font-size: 60px;
-  margin-bottom: 20px;
-}
-
-
-
-.ingresarCuenta {
-  box-sizing: border-box;
-
-  width: 700px;
-  display: block;
-  background-color: rgb(255, 255, 255);
-  padding: 35px;
-
-  border: 3px solid black;
-  margin: 0 auto;
+.link{
   text-align: center;
-
-
+  font-weight: 400;
 }
+
+
+.formulario-ingresar{
+  width: 80%;
+  margin: 0px auto;
+  margin-top: 0px;
+  padding: 50px;
+  box-shadow: 0px 0px 8px gray;
+}
+
+
+.formulario{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+ 
+}
+
+.formulario_label{
+  display: block;
+  font-weight: 900;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.formulario_input{
+  width: 90%;
+  background: #f3f2f2;
+  border: 0.5px solid black;
+  border-radius: 3px;
+  height: 45px;
+  line-height: 80px;
+  padding: 0 20px 0 5px;
+  transition: .3s ease all;
+}
+

@@ -1,82 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="fotos/iconoPestañas.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/principal.css">
-    <link rel="stylesheet" href="css/perfil.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="fotos/iconoPestañas.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/principal.css" />
+    <link rel="stylesheet" href="css/perfil.css" />
+    <script src="js/perfil.js"></script>
     <title>Perfil</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <section class="header-logo">
-            <a href="index.html"><img src="fotos/logoo.png" alt="logo-imagen"></a>
-        </section>
-        <section class="header-perfil">
-            <article class="header-perfil-nombre-usuario">
-                <h1>Nombre Usuario</h1>
-                <a href="TPIniciarSesion.html" target="_blank">Cerrar Sesión</a>
-            </article>
-            <article class="header-perfil-usuario-img">
-                <a href="TPPerfil.html" target="_blank"><img src="fotos/profile_pic.jpg" alt="profile-pic"></a>
-            </article>
-        </section>
+      <section class="header-logo">
+        <a href="index.html"><img src="fotos/logoo.png" alt="logo-imagen" /></a>
+      </section>
+      <section class="header-perfil">
+        <article class="header-perfil-nombre-usuario">
+          <h1>Nombre Usuario</h1>
+          <a href="TPIniciarSesion.html" target="_blank">Cerrar Sesión</a>
+        </article>
+        <article class="header-perfil-usuario-img">
+          <a href="TPPerfil.html" target="_blank"
+            ><img src="fotos/profile_pic.jpg" alt="profile-pic"
+          /></a>
+        </article>
+      </section>
     </header>
+
     <main>
-        <div class="ingresarCuenta">
-            <form action="" class="form">
-                
 
-                <p>Nombre: <input class="inputContainer" type="text" name="nombreusuario"></p><br>
+      <div class="formulario-ingresar"><br>
+        <form action="" class="formulario" method="get" id="formularioRegistro">
+           <div class="caja">
+             <label for="usuario" class="formulario_label">Usuario</label>
+              <div class="formulario_input-grupo">
+               <input type="text" class="formulario_input" name="usuario" placeholder="Ingrese su usuario" id="usuario">
+              </div>
+          </div>
 
-                <p>Contraseña: <input class="inputContainer" type="password" name="Contraseña"></p><br>
+          <div class="caja">
+            <label for="fecha-nacimento" class="formulario_label">Fecha de nacimiento</label>
+             <div class="formulario_input-grupo">
+                <input type="date" class="formulario_input" name="fecha-nacimento" id="fechaDeNacimiento">
+              </div>
+           </div>
 
-                <p><input class="inputContainer" type="password" name="repetircontraseña"
-                        placeholder="Repita la contraseña"></p><br>
+          <div class="caja">
+            <label for="contraseña" class="formulario_label">Contraseña</label>
+              <div class="formulario_input-grupo">
+               <input type="password" class="formulario_input" name="contraseña" placeholder="Ingrese su contraseña" id="contraseña">
+              </div>
+          </div>
 
-                <p>Fecha de nacimiento: <input class="inputContainer" type="date" name="fecha"> </p> <br>
+          <div class="caja">
+           <label for="repetir-contraseña" class="formulario_label">Repetir contraseña</label>
+             <div class="formulario_input-grupo">
+               <input type="password" class="formulario_input" name="repetir-contraseña" id="contraseñaRepetida">
+             </div>
+          </div>
 
-                <p>Email: <input class="inputContainer" type="email" name="email"> </p>
-
-
-                <div class="link">
-                    <br>
-                    <a href="premium.html" id="medio">Premium</a><br>
-                    <a href="TPIniciarSesion.html" id="medio">Eliminar usuario</a>
-                    <br>
-                </div>
-
-                <section class="btn-guardar-volverhome">
-                    <div class="btn">
-                        <a href="#">Guardar</a>
-                    </div>
-                    
-        
-
-                    <div class="btn">
-                      <a href="index.html" class="volver-inicio">Inicio</a>
-                    </div>
-
-                </section>
+          <div class="caja">
+           <label for="email" class="formulario_label">Email</label>
+              <div class="formulario_input-grupo">
+                <input type="email" class="formulario_input" name="email" placeholder="" id="email">
+              </div>
+          </div>
+        </form>
+            <br>
+        <div class="link">
+          <br />
+          <a href="premium.html" id="medio">Premium</a><br />
+          <a href="TPIniciarSesion.html" id="medio">Eliminar usuario</a>
+          <br />
         </div>
 
-     
+        <section class="btn-guardar-volverhome">
+          <div class="btn">
+            <a href="#" id="guardar-form">Guardar</a>
+          </div>
+
+          <div class="btn">
+            <a href="index.html" class="volver-inicio">Inicio</a>
+          </div>
+        </section>
+      </div>
     </main>
+
     <footer>
-        <div>
-            <p> Gutierrez Romina. 39.113.761 </p>
-        </div>
-        <div>
-            <p> Mata Nicole Denise. 42.647.596 </p>
-        </div>
-        <div>
-            <p> Zerpa Antonella Priscila. 44.258.504</p>
-        </div>
+      <div>
+        <p>Gutierrez Romina. 39.113.761</p>
+      </div>
+      <div>
+        <p>Mata Nicole Denise. 42.647.596</p>
+      </div>
+      <div>
+        <p>Zerpa Antonella Priscila. 44.258.504</p>
+      </div>
     </footer>
-
-
-
-</body>
+  </body>
+</html>

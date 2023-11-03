@@ -1,4 +1,4 @@
-main{
+main {
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -40,7 +40,7 @@ main{
 
 }
 
-.inputContainer { 
+.inputContainer {
   gap: 1em;
   color: #747373;
   font-size: 1rem;
@@ -83,6 +83,11 @@ a:active {
 }
 
 
+/*MENSAJE ERROR*/
+#mensaje {
+  margin-top: 2em;
+}
 
-
-
+.error {
+  color: crimson;
+}

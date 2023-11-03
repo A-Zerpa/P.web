@@ -1,40 +1,43 @@
-window.onload = function () { 
+//funcion window.onload verifica que 1ro se cargue toda la pagina y luego ejecuta el js
+//function () es una funcion anonima que engloba el resto
+
+window.onload = function () {
 	let iniciar;
-	
+
 	iniciar = document.getElementById("iniciar-sesion");
 	iniciar.onclick = iniciarSesion;
 }
 
+//Funcion que valida que los campos de usuario y contraseña no esten vacios
+function iniciarSesion() {
 
+	let formulario = document.getElementById("formularioInicio");
+	let usuario = document.getElementById("usuario");
+	let contraseña = document.getElementById("contraseña");
+	let mensaje = document.querySelector("#mensaje");
 
-function iniciarSesion () {
+	//restablecer mensaje de error previos
+	mensaje.innerHTML = "";
 
-	let validar = true;
-	
-	let formulario = document.getElementById ("formularioInicio");
-	let usuario = document.getElementById ("usuario");
+	let usuarioVacio = true;
+	let contraniaVacia = true;
 
-    let validarContraseña=true;
-    let contraseña = document.getElementById ("contraseña");
-	
 	if (!usuario.value) {
-		alert ("Por favor, ingrese su usuario");
+		mensaje.innerHTML += "<p>Por favor, ingrese su usuario</p>";
 		usuario.focus();
-		validar = false;
+		usuarioVacio = false;
 	}
-		
-	
+
+
 	if (!contraseña.value) {
-		alert ("Por favor, ingrese su contraseña");
+		mensaje.innerHTML += "<p>Por favor, ingrese su contraseña</p>";
 		contraseña.focus();
-		validarContraseña = false;
+		contraniaVacia = false;
 	}
-		
-	if (validarContraseña && validar) {
+
+	if (usuarioVacio && contraniaVacia) {
 		formulario.submit();
-		alert ("Validación exitosa");
+		alert("Validación exitosa");
 	}
-
-
 
 }

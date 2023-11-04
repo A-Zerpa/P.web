@@ -22,23 +22,23 @@ function iniciarSesion() {
 	//restablecer mensaje de error previos
 	mensaje.innerHTML = "";
 
-	let usuarioVacio = true;
-	let contraniaVacia = true;
+	let usuarioVacio = false;
+	let contraniaVacia = false;
 
 	if (!usuario.value) {
 		mensaje.innerHTML += "<p>Por favor, ingrese su usuario</p>";
 		usuario.focus();
-		usuarioVacio = false;
+		usuarioVacio = true;
 	}
 
 
 	if (!contraseña.value) {
 		mensaje.innerHTML += "<p>Por favor, ingrese su contraseña</p>";
 		contraseña.focus();
-		contraniaVacia = false;
+		contraniaVacia = true;
 	}
 
-	if (usuarioVacio && contraniaVacia) {
+	if (!usuarioVacio && !contraniaVacia) {
 		formulario.submit();
 		/*
 		formulario.addEventListener('submit', (e) => {
@@ -53,6 +53,8 @@ function iniciarSesion() {
 		
 		})*/
 		alert("Validación exitosa");
+		//redirige al usuario a la pagina principal
+		window.location.href = "index.html";
 	}
 
 }

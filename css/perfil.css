@@ -1,5 +1,3 @@
-
-
 main {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -64,13 +62,13 @@ main {
   color: #ffffff;
 }
 
-.link{
+.link {
   text-align: center;
   font-weight: 400;
 }
 
 
-.formulario-ingresar{
+.formulario-ingresar {
   width: 80%;
   margin: 0px auto;
   margin-top: 0px;
@@ -79,21 +77,21 @@ main {
 }
 
 
-.formulario{
+.formulario {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
- 
+
 }
 
-.formulario_label{
+.formulario_label {
   display: block;
   font-weight: 900;
   padding: 5px;
   cursor: pointer;
 }
 
-.formulario_input{
+.formulario_input {
   width: 90%;
   background: #f3f2f2;
   border: 0.5px solid black;
@@ -104,3 +102,12 @@ main {
   transition: .3s ease all;
 }
 
+/*MENSAJE ERROR*/
+#mensaje {
+  margin-top: 2em;
+}
+
+.error {
+  color: crimson;
+  text-align: center;
+}

@@ -3,13 +3,16 @@
 
 window.onload = function () {
 	let iniciar;
-
+	
 	iniciar = document.getElementById("iniciar-sesion");
 	iniciar.onclick = iniciarSesion;
 }
 
+
 //Funcion que valida que los campos de usuario y contraseña no esten vacios
 function iniciarSesion() {
+
+	
 
 	let formulario = document.getElementById("formularioInicio");
 	let usuario = document.getElementById("usuario");
@@ -37,6 +40,18 @@ function iniciarSesion() {
 
 	if (usuarioVacio && contraniaVacia) {
 		formulario.submit();
+		/*
+		formulario.addEventListener('submit', (e) => {
+	
+			e.preventDefault(); // Prevenir la acción predeterminada del envío del formulario
+		
+			// Aquí puedes especificar la URL de destino a la que deseas redirigir
+			const urlDestino = "index.html";
+		  
+			// Redirigir a la página de inicio
+			window.location.href = urlDestino;//enviar con el bota otra pagina
+		
+		})*/
 		alert("Validación exitosa");
 	}
 

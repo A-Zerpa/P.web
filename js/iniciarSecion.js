@@ -3,13 +3,16 @@
 
 window.onload = function () {
 	let iniciar;
-
+	
 	iniciar = document.getElementById("iniciar-sesion");
 	iniciar.onclick = iniciarSesion;
 }
 
+
 //Funcion que valida que los campos de usuario y contraseña no esten vacios
 function iniciarSesion() {
+
+	
 
 	let formulario = document.getElementById("formularioInicio");
 	let usuario = document.getElementById("usuario");
@@ -19,25 +22,39 @@ function iniciarSesion() {
 	//restablecer mensaje de error previos
 	mensaje.innerHTML = "";
 
-	let usuarioVacio = true;
-	let contraniaVacia = true;
+	let usuarioVacio = false;
+	let contraniaVacia = false;
 
 	if (!usuario.value) {
 		mensaje.innerHTML += "<p>Por favor, ingrese su usuario</p>";
 		usuario.focus();
-		usuarioVacio = false;
+		usuarioVacio = true;
 	}
 
 
 	if (!contraseña.value) {
 		mensaje.innerHTML += "<p>Por favor, ingrese su contraseña</p>";
 		contraseña.focus();
-		contraniaVacia = false;
+		contraniaVacia = true;
 	}
 
-	if (usuarioVacio && contraniaVacia) {
+	if (!usuarioVacio && !contraniaVacia) {
 		formulario.submit();
+		/*
+		formulario.addEventListener('submit', (e) => {
+	
+			e.preventDefault(); // Prevenir la acción predeterminada del envío del formulario
+		
+			// Aquí puedes especificar la URL de destino a la que deseas redirigir
+			const urlDestino = "index.html";
+		  
+			// Redirigir a la página de inicio
+			window.location.href = urlDestino;//enviar con el bota otra pagina
+		
+		})*/
 		alert("Validación exitosa");
+		//redirige al usuario a la pagina principal
+		window.location.href = "index.html";
 	}
 
 }

@@ -40,21 +40,13 @@ function iniciarSesion() {
 
 	if (!usuarioVacio && !contraniaVacia) {
 		formulario.submit();
-		/*
-		formulario.addEventListener('submit', (e) => {
-	
-			e.preventDefault(); // Prevenir la acción predeterminada del envío del formulario
-		
-			// Aquí puedes especificar la URL de destino a la que deseas redirigir
-			const urlDestino = "index.html";
-		  
-			// Redirigir a la página de inicio
-			window.location.href = urlDestino;//enviar con el bota otra pagina
-		
-		})*/
-		alert("Validación exitosa");
-		//redirige al usuario a la pagina principal
 		window.location.href = "index.html";
+		mostrarnombreUsuario();
 	}
 
+}
+
+function mostrarnombreUsuario(){
+	let nombreUsuario = document.getElementById("usuario");
+	window.localStorage.setItem('usuario', nombreUsuario.value);
 }

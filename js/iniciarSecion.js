@@ -48,5 +48,5 @@ function iniciarSesion() {
 
 function mostrarnombreUsuario(){
 	let nombreUsuario = document.getElementById("usuario");
-	window.localStorage.setItem('usuario', nombreUsuario.value);
+	window.localStorage.setItem('usuarioIngresado', nombreUsuario.value);
 }

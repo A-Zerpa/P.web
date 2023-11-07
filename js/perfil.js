@@ -19,9 +19,9 @@ function guardarDatosUsuario() {
 	let errorUsuario = validarUsuario(mensaje);
 	let errorContrasena = validarContraseñas(mensaje);
 	let errorFecha = validarFecha(mensaje);
-	let errorEmail = validarMail(mensaje);
+	let errorEmail = validarEmail(mensaje);
 
-	/*	if (validarUsuario(mensaje) && validarContraseñas(mensaje) && validarMail(mensaje) && validarFecha(mensaje)) {
+	/*	if (validarUsuario(mensaje) && validarContraseñas(mensaje) && validarEmail(mensaje) && validarFecha(mensaje)) {
 			formulario.submit();
 			alert("Validación exitosa");
 		}*/
@@ -106,18 +106,18 @@ function formatearNumero(num) {
 }
 
 
-function validarMail(mensaje) {
+function validarEmail(mensaje) {
 	let regexp = /^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[0-9a-zA-Z]+$/;
-	let validarMail = true;
-	let mail = document.getElementById("email").value;
+	let validarEmail = true;
+	let Email = document.getElementById("email").value;
 
-	if (regexp.test(mail) == 0 || mail.length == 0) {
+	if (regexp.test(Email) == 0 || Email.length == 0) {
 		mensaje.innerHTML += "Introduzca una direccion de email valida<br>";
 	//	alert("Introduzca una direccion de email valida");
-		validarMail = false;
+		validarEmail = false;
 	}
 
-	return validarMail;
+	return validarEmail;
 }
 
 

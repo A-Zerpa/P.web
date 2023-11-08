@@ -1,0 +1,26 @@
+.slider{
+    padding-top: 1em;
+    
+}
+
+.slider img{
+    margin: auto;
+    padding: 0 1em;
+}
+
+.slick-prev, .slick-next{
+    z-index: 2;
+}
+
+.slick-prev{
+    left: 25px;
+}
+
+.slick-next{
+    right: 25px;
+}
+
+.slick-prev:before, .slick-next:before{
+    font-size: 30px;
+}
+

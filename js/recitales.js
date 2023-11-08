@@ -50,3 +50,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     calendar.render();
 });
+
+//popup
+let cerrar=document.querySelector("#cerrar");
+let popup=document.querySelector(".popup");
+
+cerrar.addEventListener("click", ()=>{
+    popup.classList.add("d-none");
+})

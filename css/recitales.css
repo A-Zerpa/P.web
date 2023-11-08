@@ -24,3 +24,11 @@
     font-size: 30px;
 }
 
+.calendario-box{
+    padding: 2em;
+}
+
+.calendario-box h1{
+    text-align: center;
+    padding: 1em;
+}

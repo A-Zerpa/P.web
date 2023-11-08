@@ -19,15 +19,32 @@ document.addEventListener('DOMContentLoaded', function () {
         locale: 'es',
         events: [
             {
-                title: 'Curso 1 Javascript',
-                start: '2023-12-16',
-                end: '2023-12-30'
+                title: 'Fito Paez - Rosario Ex-Rural',
+                start: '2023-12-02',
+                end: '2023-12-04'
             },
             {
-                title: 'Curso 2',
-                start: '2023-06-20',
-                end: '2023-07-05'
-            }
+                title: 'Divididos - Tandil',
+                start: '2023-11-25',
+            },
+            {
+                title: 'Abel Pintos - Estadio Velez Sarsfield',
+                start: '2023-11-17',
+                end: '2023-11-19',
+            },
+            {
+                title: 'Árbol - Club Museum',
+                start: '2023-12-16',
+            },
+            {
+                title: 'Karol G - Estadio Velez Sarsfield',
+                start: '2024-04-26',
+                end: '2024-04-28',
+            },
+            {
+                title: 'La Konga - Quality Arena',
+                start: '2023-12-07',
+            },
         ]
     });
 

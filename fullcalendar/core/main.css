@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .fc {
   direction: ltr;
-  text-align: left;
+  text-align: center;
 }
 
 .fc-rtl {
@@ -265,7 +265,7 @@ temporary rendered events).
 
 .fc-event,
 .fc-event-dot {
-  background-color: #3788d8;
+  background-color: #3045BF;
   /* default BACKGROUND color */
 }
 
@@ -577,7 +577,7 @@ TODO: more distinction between this file and common.css
 }
 
 .fc-unthemed td.fc-today {
-  background: #fcf8e3;
+  background-color: #f28a3060;
 }
 
 .fc-unthemed .fc-disabled-day {
@@ -720,7 +720,7 @@ Lots taken from Flatly (MIT): https://bootswatch.com/4/flatly/bootstrap.css
 
 .fc-button-primary:hover {
   color: #fff;
-  background-color: #1e2b37;
+  background-color: #F28B30;
   border-color: #1a252f;
 }
 
@@ -830,7 +830,6 @@ Lots taken from Flatly (MIT): https://bootswatch.com/4/flatly/bootstrap.css
 }
 
 .fc-toolbar h2 {
-  font-size: 1.75em;
   margin: 0;
 }
 

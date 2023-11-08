@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 end: '2024-04-28',
             },
             {
-                title: 'La Konga - Quality Arena',
-                start: '2023-12-07',
+                title: 'Miranda - Quality Arena',
+                start: '2023-12-10',
             },
         ]
     });

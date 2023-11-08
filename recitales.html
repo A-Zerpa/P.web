@@ -10,13 +10,13 @@
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!--calendario-->
+    <link href='fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+    <script src='fullcalendar/core/main.js'></script>
+    <script src='fullcalendar/daygrid/main.js'></script>
     <!--  -->
     <link rel="stylesheet" href="css/recitales.css">
-
-
-
-
-=======
     <script src="js/headerPerfil.js"></script>
 
     <title>Recitales</title>
@@ -51,7 +51,12 @@
             </article>
         </section>
 
-        <article id>
+        <section class="calendario-box">
+            <h1>Calendario de Recitales</h1>
+            <article id="calendario"></article>
+        </section>
+
+        <article>
             <a href="#" id="abrir-pop-up">Abrir Popup</a>
             <article class="popup-display-none">
                 <h2>Coldplay</h2>
@@ -60,6 +65,8 @@
                 <p>Estadio River Plate</p>
                 <button id="cerrar">Cerrar</button>
             </article>
+
+
     </main>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>

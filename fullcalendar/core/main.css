@@ -263,6 +263,12 @@ temporary rendered events).
   border: 1px solid #3788d8;
 }
 
+.fc-event:hover{
+  background-color: #F28B30;
+  border-color: #F28B30;
+  
+}
+
 .fc-event,
 .fc-event-dot {
   background-color: #3045BF;

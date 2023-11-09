@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/91c6e18db7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/principal.css">
     <link rel="stylesheet" href="css/misFavoritas.css">
-    <script src="js/headerPerfil.js"></script>
+    <script src="js/misFavoritas.js"></script>
     <title>Mis Favoritas</title>
 </head>
 
@@ -19,7 +19,7 @@
         </section>
         <section class="header-perfil">
             <article class="header-perfil-nombre-usuario">
-                <h1 id="nombreDeUsuario">Nombre Usuario</h1>
+                <h1 id="nombreDeUsuario">Usuario</h1>
                 <a href="TPIniciarSesion.html" id="cerrarSecion">Cerrar Sesión</a>
             </article>
             <article class="header-perfil-usuario-img">
@@ -75,8 +75,23 @@
                 </div>
             </section>
 
-            <!-- contenedor2 -->
-            <div>
+             <!-- contenedor2 -->
+             <div>
+                <section id="Busqueda">
+                    <label for="filtros">Filtrar por:</label>
+                  <select id="filtro">
+                     <option value="cancion">Cancion</option>
+                     <option value="album">Album</option>
+                   </select>
+                   <input type="text" id="busqueda" placeholder="Buscar canción o álbum">
+                   <button id="filtrarBoton">Filtrar</button>
+                   <button id="borrarBoton">Borrar</button>
+                </section>
+                
+                <ul id="listaDeBusqueda">
+                    <li></li>
+                </ul>
+        
                 <!-- grid de canciones, album, duracion, reproducciones -->
                 <section class="grid-main-canciones">
                     <!-- PRIMERA FILA DE LA TABLA -->
@@ -98,38 +113,40 @@
                     <!-- FILAS DE CANCIONES -->
 
                     <!-- FILA 1 -->
-                    <div class="grid-main-canciones-filas">
-                        <button data-cancion-url="mp3/corazon vacio.mp3"><i class="fa-solid fa-play"></i></button>
-                    </div>
-                    <!-- display flex solo en las star -->
-                    <div class="grid-main-canciones-filas-star">
-                        <p>Corazón Vacío</p>
-                        <button><i class="fa-regular fa-star"></i></button>
-                    </div>
-                    <div class="grid-main-canciones-filas-star">
-                        <p>Corazón Vacío</p>
-                        <button><i class="fa-regular fa-star"></i></button>
-                    </div>
+                    
+                        <div class="grid-main-canciones-filas">
+                            <button data-cancion-url="mp3/corazon vacio.mp3"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                        <!-- display flex solo en las star -->
+                        <div class="grid-main-canciones-filas-star">
+                            <p>Corazón Vacío</p>
+                            <button><i class="fa-regular fa-star"></i></button>
+                        </div>
+                        <div class="grid-main-canciones-filas-star">
+                            <p>Corazón Vacío</p>
+                            <button><i class="fa-regular fa-star"></i></button>
+                        </div>
 
-                    <div class="grid-main-canciones-filas">
-                        2:40
-                    </div>
-                    <div class="grid-main-canciones-filas">
-                        15000
-                    </div>
-
-
+                        <div class="grid-main-canciones-filas">
+                            2:40
+                        </div>
+                        <div class="grid-main-canciones-filas">
+                            15000
+                        </div>
+                
                     <!-- FILA 2-->
                     <div class="grid-main-canciones-filas">
-                        <button data-cancion-url="mp3/Arctic Monkeys  Do I Wanna Know.mp3"><i class="fa-solid fa-play"></i></button>
+
+                        <button data-cancion-url="mp3/Arctic Monkeys  Do I Wanna Know.mp3"><i
+                                class="fa-solid fa-play"></i></button>
                     </div>
                     <!-- display flex solo en las star -->
                     <div class="grid-main-canciones-filas-star">
-                        <p>Kill Bill</p>
+                        <p class="cancion">Kill Bill</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
                     <div class="grid-main-canciones-filas-star">
-                        <p>Sos</p>
+                        <p class="album">Sos</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
 
@@ -146,11 +163,11 @@
                     </div>
                     <!-- display flex solo en las star -->
                     <div class="grid-main-canciones-filas-star">
-                        <p>LALA</p>
+                        <p class="cancion">LALA</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
                     <div class="grid-main-canciones-filas-star">
-                        <p>La Vida es Una</p>
+                        <p class="album">La Vida es Una</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
 
@@ -167,11 +184,11 @@
                     </div>
                     <!-- display flex solo en las star -->
                     <div class="grid-main-canciones-filas-star">
-                        <p>Paint The Town Red</p>
+                        <p class="cancion">Paint The Town Red</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
                     <div class="grid-main-canciones-filas-star">
-                        <p>Paint The Town Red</p>
+                        <p class="album">Paint The Town Red</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
 
@@ -188,11 +205,11 @@
                     </div>
                     <!-- display flex solo en las star -->
                     <div class="grid-main-canciones-filas-star">
-                        <p>As It Was</p>
+                        <p class="cancion">As It Was</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
                     <div class="grid-main-canciones-filas-star">
-                        <p>Harry's House</p>
+                        <p class="album">Harry's House</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
 
@@ -209,11 +226,11 @@
                     </div>
                     <!-- display flex solo en las star -->
                     <div class="grid-main-canciones-filas-star">
-                        <p>Flowers</p>
+                        <p class="cancion">Flowers</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
                     <div class="grid-main-canciones-filas-star">
-                        <p>Endless Summer Vacation</p>
+                        <p class="album">Endless Summer Vacation</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
 
@@ -230,11 +247,11 @@
                     </div>
                     <!-- display flex solo en las star -->
                     <div class="grid-main-canciones-filas-star">
-                        <p>Columbia</p>
+                        <p class="cancion">Columbia</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
                     <div class="grid-main-canciones-filas-star">
-                        <p>Columbia</p>
+                        <p class="album">Columbia</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
 
@@ -251,11 +268,11 @@
                     </div>
                     <!-- display flex solo en las star -->
                     <div class="grid-main-canciones-filas-star">
-                        <p>Engel</p>
+                        <p class="cancion">Engel</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
                     <div class="grid-main-canciones-filas-star">
-                        <p>Sehnsucht</p>
+                        <p class="album">Sehnsucht</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
 
@@ -272,11 +289,11 @@
                     </div>
                     <!-- display flex solo en las star -->
                     <div class="grid-main-canciones-filas-star">
-                        <p>Ex-Mortis</p>
+                        <p class="cancion">Ex-Mortis</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
                     <div class="grid-main-canciones-filas-star">
-                        <p>Welcome To Horrorwood</p>
+                        <p class="album">Welcome To Horrorwood</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
 
@@ -293,11 +310,11 @@
                     </div>
                     <!-- display flex solo en las star -->
                     <div class="grid-main-canciones-filas-star">
-                        <p>Back To Me</p>
+                        <p class="cancion">Back To Me</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
                     <div class="grid-main-canciones-filas-star">
-                        <p>Back To Me</p>
+                        <p class="album">Back To Me</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
 
@@ -314,11 +331,11 @@
                     </div>
                     <!-- display flex solo en las star -->
                     <div class="grid-main-canciones-filas-star">
-                        <p>Columbia</p>
+                        <p class="cancion">Columbia</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
                     <div class="grid-main-canciones-filas-star">
-                        <p>Columbia</p>
+                        <p class="album">Columbia</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
 
@@ -335,11 +352,11 @@
                     </div>
                     <!-- display flex solo en las star -->
                     <div class="grid-main-canciones-filas-star">
-                        <p>Columbia</p>
+                        <p class="cancion">Columbia</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
                     <div class="grid-main-canciones-filas-star">
-                        <p>Columbia</p>
+                        <p class="album">Columbia</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
 
@@ -356,11 +373,11 @@
                     </div>
                     <!-- display flex solo en las star -->
                     <div class="grid-main-canciones-filas-star">
-                        <p>Columbia</p>
+                        <p class="cancion">Columbia</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
                     <div class="grid-main-canciones-filas-star">
-                        <p>Columbia</p>
+                        <p class="album">Columbia</p>
                         <button><i class="fa-regular fa-star"></i></button>
                     </div>
 
@@ -373,6 +390,7 @@
 
                 </section>
 
+
                 <!-- reproductor -->
                 <section class="grid-main-reproductor">
                     <div id="nombreDeCancion"></div>
@@ -381,7 +399,6 @@
                     </audio>
                 </section>
             </div>
-
 
         </article>
     </main>

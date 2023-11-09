@@ -91,12 +91,12 @@
 
                     <!-- FILA 1 -->
                     <div class="grid-main-canciones-filas">
-                        <button><i class="fa-solid fa-play"></i></button>
+                        <button data-cancion-url="mp3/corazon vacio.mp3"><i class="fa-solid fa-play"></i></button>
                     </div>
                     <!-- display flex solo en las star -->
                     <div class="grid-main-canciones-filas-star">
                         <p>Corazón Vacío</p>
-                        <button><i class="fa-regular fa-star"></i></button>
+                        <button ><i class="fa-regular fa-star"></i></button>
                     </div>
                     <div class="grid-main-canciones-filas-star">
                         <p>Corazón Vacío</p>
@@ -113,7 +113,7 @@
 
                     <!-- FILA 2-->
                     <div class="grid-main-canciones-filas">
-                        <button><i class="fa-solid fa-play"></i></button>
+                        <button data-cancion-url="mp3/Arctic Monkeys  Do I Wanna Know.mp3"><i class="fa-solid fa-play"></i></button>
                     </div>
                     <!-- display flex solo en las star -->
                     <div class="grid-main-canciones-filas-star">
@@ -366,8 +366,9 @@
                 </section>
                 <!-- reproductor -->
                 <section class="grid-main-reproductor">
+                    <div id="nombreDeCancion"></div>
                     <audio controls>
-                        <source src="mp3/Arctic Monkeys  Do I Wanna Know.mp3">
+                        <source src="">
                     </audio>
                 </section>
             </div>

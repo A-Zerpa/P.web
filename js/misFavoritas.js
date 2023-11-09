@@ -5,7 +5,8 @@ window.onload = function () {
   
 
       borrar.addEventListener('click', function() {
-
+        let lista=document.querySelector("#listaDeBusqueda");
+        lista.innerHTML = '';
         })
 
       botonInput.addEventListener('click', function() {

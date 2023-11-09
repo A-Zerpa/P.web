@@ -48,4 +48,46 @@
     border-style: none;
 }
 
+#busqueda{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#busqueda label{
+    padding: 0em 1em;
+}
+
+#filtro{
+    padding: 0.3em;
+    border-radius: 0.6em;
+    
+}
+
+#barra-busqueda{
+    width: 18em;
+  outline: none;
+  border: none;
+  border-radius: 2em;
+  padding: 0.7em;
+  margin: 1em;
+  font-size: 1em;
+  flex: auto;
+  box-shadow: 0px 2px 7px rgb(189, 189, 189);
+}
+
+#filtrarBoton, #borrarBoton{
+    padding: 0.5em;
+    margin: 1em ;
+    border-style: none;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#filtrarBoton:hover, #borrarBoton:hover{
+    background-color: #f25f29;
+    color: var(--color-blanco);
+    cursor: pointer;
+}
 

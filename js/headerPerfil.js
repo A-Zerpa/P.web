@@ -1,14 +1,12 @@
 
 window.onload = function () {
     let cerrar = document.querySelector('#cerrarSecion');
-
     let nombreUsuario = window.localStorage.getItem('usuarioIngresado');
     let mensajePerfil = document.querySelector('#nombreDeUsuario');
     mensajePerfil.innerHTML = nombreUsuario;
 
     cerrar.addEventListener("click", () => {
         window.localStorage.removeItem('usuarioIngresado');
-
     });
 
 

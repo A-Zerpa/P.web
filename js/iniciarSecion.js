@@ -12,8 +12,6 @@ window.onload = function () {
 //Funcion que valida que los campos de usuario y contraseña no esten vacios
 function iniciarSesion() {
 
-	
-
 	let formulario = document.getElementById("formularioInicio");
 	let usuario = document.getElementById("usuario");
 	let contraseña = document.getElementById("contraseña");
@@ -45,7 +43,7 @@ function iniciarSesion() {
 	}
 
 }
-
+// guarda el nombre en el local storage
 function mostrarnombreUsuario(){
 	let nombreUsuario = document.getElementById("usuario");
 	window.localStorage.setItem('usuarioIngresado', nombreUsuario.value);

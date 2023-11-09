@@ -21,14 +21,12 @@ function guardarDatosUsuario() {
 	let errorFecha = validarFecha(mensaje);
 	let errorEmail = validarMail(mensaje);
 
-	/*	if (validarUsuario(mensaje) && validarContraseñas(mensaje) && validarMail(mensaje) && validarFecha(mensaje)) {
-			formulario.submit();
-			alert("Validación exitosa");
-		}*/
+
 	let error = errorUsuario && errorContrasena && errorFecha && errorEmail;
 	if (error) {
 		formulario.submit();
-		alert("Validacion exitosa");
+		window.location.href = "TPIniciarSesion.html";
+
 	}
 
 }
@@ -41,9 +39,7 @@ function validarUsuario(mensaje) {
 		mensaje.innerHTML += "El campo de usuario no puede estar vacío<br>";
 		validar = false;
 	} else if (!(usuario.length > 4 && usuario.length < 8)) {
-		//	alert("El usuario debe tener entre 5 y 7 carácteres");
 		mensaje.innerHTML += "El usuario debe tener entre 5 y 7 carácteres<br>";
-		/*usuario.focus();*/
 		validar = false;
 	}
 
@@ -113,7 +109,6 @@ function validarMail(mensaje) {
 
 	if (regexp.test(mail) == 0 || mail.length == 0) {
 		mensaje.innerHTML += "Introduzca una direccion de email valida<br>";
-	//	alert("Introduzca una direccion de email valida");
 		validarMail = false;
 	}
 

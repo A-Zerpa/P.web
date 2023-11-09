@@ -45,4 +45,5 @@
   padding: 0.5em;
   color: var(--color--hover-oscuro);
   border-style: none;
+  cursor: pointer;
 }

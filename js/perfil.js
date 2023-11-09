@@ -5,6 +5,7 @@ window.onload = function () {
 
 	guardar = document.getElementById("guardar-form");
 	guardar.onclick = guardarDatosUsuario;
+	
 }
 
 
@@ -28,8 +29,8 @@ function guardarDatosUsuario() {
 	let error = errorUsuario && errorContrasena && errorFecha && errorEmail;
 	if (error) {
 		formulario.submit();
-		alert("Validacion exitosa");
-	}
+		window.location.href = "TPIniciarSesion.html";
+	} 
 
 }
 //Funcion que verifica que el campo de usuario no este vacio y tenga entre 5 y 7 caracteres

@@ -1,6 +1,6 @@
 window.onload = function () {
    //nombre de usuario
-  let input = document.querySelector('#barra-busqueda');
+  let input = document.querySelector('#busqueda');
   let botonInput = document.querySelector('#filtrarBoton')
   let borrar= document.querySelector('#borrarBoton')
  
@@ -78,7 +78,7 @@ window.onload = function () {
       
         let textoFila = fila.textContent.toLowerCase();
         if (textoFila.includes(valorActual)) {
-            let contenido=document.querySelector("#barra-busqueda").value;
+            let contenido=document.querySelector("#busqueda").value;
             let nodoli=document.createElement("li");
             let nodotexto= document.createTextNode(contenido);
             nodoli.appendChild(nodotexto);

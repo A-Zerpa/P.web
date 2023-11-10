@@ -30,8 +30,7 @@
 
     <!-- similar a musicaSonando.html. Cambia el titulo del header y en misFavoritas.css cambia el color de la opcion Mis Favoritas del menu lateral-->
     <main>
-        <!-- TITULO -->
-        <h1 id="titulo-principal">Mis canciones favoritas</h1>
+
         <article id="grid-main">
             <!-- MENU LATERAL -->
             <section class="grid-main-menu-lateral">
@@ -75,7 +74,26 @@
                 </div>
             </section>
 
-             <!-- contenedor2 -->
+
+            <!-- contenedor2 -->
+            <div>
+                <!-- TITULO -->
+                <h1 id="titulo-principal">Mis canciones favoritas</h1>
+                <section id="busqueda">
+                    <label for="filtros">Filtrar por:</label>
+                    <select name="filtro" id="filtro">
+                        <option value="cancion">Cancion</option>
+                        <option value="album">Album</option>
+                    </select>
+                    <input type="text" id="barra-busqueda" placeholder="Buscar canción o álbum">
+                    <button id="filtrarBoton">Filtrar</button>
+                    <button id="borrarBoton">Borrar</button>
+                </section>
+
+                <ul id="listaDeBusqueda">
+                    <li></li>
+                </ul>
+            <!-- contenedor2 -->
              <div>
                 <div id="filtrosOrden">
                     <section id="Busqueda">
@@ -92,6 +110,7 @@
                         <li></li>
                      </ul>
                  </div>
+
                 <!-- grid de canciones, album, duracion, reproducciones -->
                 <section class="grid-main-canciones">
                     <!-- PRIMERA FILA DE LA TABLA -->
@@ -113,27 +132,27 @@
                     <!-- FILAS DE CANCIONES -->
 
                     <!-- FILA 1 -->
-                    
-                        <div class="grid-main-canciones-filas">
-                            <button data-cancion-url="mp3/corazon vacio.mp3"><i class="fa-solid fa-play"></i></button>
-                        </div>
-                        <!-- display flex solo en las star -->
-                        <div class="grid-main-canciones-filas-star">
-                            <p>Corazón Vacío</p>
-                            <button><i class="fa-regular fa-star"></i></button>
-                        </div>
-                        <div class="grid-main-canciones-filas-star">
-                            <p>Corazón Vacío</p>
-                            <button><i class="fa-regular fa-star"></i></button>
-                        </div>
 
-                        <div class="grid-main-canciones-filas">
-                            2:40
-                        </div>
-                        <div class="grid-main-canciones-filas">
-                            15000
-                        </div>
-                
+                    <div class="grid-main-canciones-filas">
+                        <button data-cancion-url="mp3/corazon vacio.mp3"><i class="fa-solid fa-play"></i></button>
+                    </div>
+                    <!-- display flex solo en las star -->
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Corazón Vacío</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+                    <div class="grid-main-canciones-filas-star">
+                        <p>Corazón Vacío</p>
+                        <button><i class="fa-regular fa-star"></i></button>
+                    </div>
+
+                    <div class="grid-main-canciones-filas">
+                        2:40
+                    </div>
+                    <div class="grid-main-canciones-filas">
+                        15000
+                    </div>
+
                     <!-- FILA 2-->
                     <div class="grid-main-canciones-filas">
 

@@ -91,3 +91,48 @@
     cursor: pointer;
 }
 
+#Busqueda {
+        display: flex;
+        margin-bottom: 15px;
+        align-items: center;
+}
+
+#Busqueda label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#filtro, #busqueda {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+#filtrarBoton, #borrarBoton {
+    background-color: #F28B30;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#filtrarBoton:hover, #borrarBoton:hover {
+    background-color: #ee760d;
+}
+#listaDeBusqueda {
+    list-style-type: none;
+    padding: 0;
+}
+
+#listaDeBusqueda li {
+    margin-bottom: 5px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
